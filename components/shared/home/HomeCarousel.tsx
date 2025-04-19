@@ -17,6 +17,7 @@ const HomeCarousal = ({
     name: string;
     image: string;
     href: string;
+    buttonCaption: string;
   }[];
 }) => {
   const plugin = React.useRef(
@@ -27,8 +28,8 @@ const HomeCarousal = ({
       dir="ltr"
       plugins={[plugin.current]}
       className="w-full mx-auto"
-      onMouseEnter={() => plugin.current.stop()}
-      onMouseLeave={() => plugin.current.reset()}
+      onMouseEnter={plugin.current.stop}
+      onMouseLeave={plugin.current.reset}
     >
       <CarouselContent>
         {items.map((item) => (
@@ -42,6 +43,9 @@ const HomeCarousal = ({
                   priority
                   className="object-cover"
                 />
+                <h1 className="absolute bottom-8 right-8 z-10 px-8 py-5 text-white text-3xl font-semibold bg-gradient-to-r from-blue-600 to-purple-600 rounded-full shadow-lg backdrop-blur-sm hover:scale-105 transition-transform duration-300">
+                  {item.buttonCaption}
+                </h1>
               </div>
             </Link>
           </CarouselItem>

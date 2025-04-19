@@ -2217,14 +2217,14 @@ const products = [
 const data = {
   products,
   headerMenus: [
-    { name: "PC", href: "/pc-games" },
-    { name: "PS", href: "/ps-games" },
-    { name: "XBOX", href: "/xbox-live" },
-    { name: "NINTENDO", href: "/nintendo-games" },
-    { name: "TOP-UPS", href: "/top-up" },
-    { name: "Sale", href: "/sale" },
+    { name: "PC", href: "/pc" },
+    { name: "PS", href: "/ps" },
+    { name: "XBOX", href: "/xbox" },
+    { name: "NINTENDO", href: "/nintendo" },
+    { name: "EPIC GAME", href: "/epic-game" },
+    { name: "Ubisoft", href: "/ubisoft" },
     { name: "DAILY DEALS", href: "/daily-deals" },
-    { name: "NEW", href: "/news" },
+    { name: "NEWS", href: "/news" },
     { name: "COMING SOON", href: "/coming-soon" },
   ],
   homeCarousels: [
@@ -2232,21 +2232,25 @@ const data = {
       name: "Monster Hunter Wilds (PS)",
       image: "/images/home-carousel/Monster Hunter Wilds.jpg",
       href: "/monster-hunter-wilds-ps",
+      buttonCaption: "Buy Now",
     },
     {
       name: "The Legend Of Zelda Breath Of The Wild (Nintendo)",
       image: "/images/home-carousel/The Legend Of Zelda Breath Of The Wild.jpg",
       href: "/the-legend-of-zelda-breath-of-the-wild-nintendo",
+      buttonCaption: "See This",
     },
     {
       name: "The Last Of Us Part II Remastered (PS) ",
       image: "/images/home-carousel/The Last Of Us Part II Remastered.jpg",
       href: "/the-last-of-us-part-ii-remaster-ps",
+      buttonCaption: "Release Now",
     },
     {
       name: "God Of War Ragnarok (PS)",
       image: "/images/home-carousel/God Of War Ragnarok.jpeg",
       href: "/god-of-war-ragnarok-ps",
+      buttonCaption: "Shop Now",
     },
   ],
 };
