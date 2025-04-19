@@ -29,7 +29,8 @@ model Product{
     review Int
     publisher String
     delivery String
-    tag String
+    tag String?
+
     createdAt DateTime @default(now())
     updateAt DateTime @updatedAt
 }

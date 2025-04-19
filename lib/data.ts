@@ -98,6 +98,7 @@ const products: IProductInput[] = [
     review: 93,
     publisher: "Ubisoft",
     delivery: "Account",
+    tag: "daily-deals",
   },
   {
     name: "Assassin's Creed Odyssey (PS)",
@@ -154,6 +155,7 @@ const products: IProductInput[] = [
     review: 84,
     publisher: "Ubisoft",
     delivery: "Physical DVD",
+    tag: "best-sellers",
   },
 
   /* Ark Survival */
@@ -266,6 +268,7 @@ const products: IProductInput[] = [
     review: 89,
     publisher: "Game Science",
     delivery: "Physical DVD",
+    tag: "best-sellers",
   },
 
   /* Call Of Duty Black Ops 6 */
@@ -286,6 +289,7 @@ const products: IProductInput[] = [
     review: 87,
     publisher: "Activision",
     delivery: "Digital Key",
+    tag: "daily-deals",
   },
   {
     name: "Call Of Duty Black Ops 6 (PS)",
@@ -342,6 +346,7 @@ const products: IProductInput[] = [
     review: 83,
     publisher: "Activision",
     delivery: "Digital Code",
+    tag: "best-sellers",
   },
 
   /* Callisto Protocol */
@@ -439,6 +444,7 @@ const products: IProductInput[] = [
     review: 86,
     publisher: "CD Projekt",
     delivery: "Digital Key",
+    tag: "best-sellers",
   },
 
   {
@@ -513,6 +519,7 @@ const products: IProductInput[] = [
     review: 88,
     publisher: "Sony Interactive Entertainment",
     delivery: "Physical DVD",
+    tag: "best-sellers",
   },
   {
     name: "Death Stranding (Epic Game)",
@@ -774,6 +781,7 @@ const products: IProductInput[] = [
     review: 94,
     publisher: "Bandai Namco Entertainment",
     delivery: "Physical DVD",
+    tag: "best-sellers",
   },
 
   /* Evil West */
@@ -872,6 +880,7 @@ const products: IProductInput[] = [
     review: 76,
     publisher: "Square Enix",
     delivery: "Physical DVD",
+    tag: "best-sellers",
   },
 
   /* Final Fantasy VII Rebirth */
@@ -952,6 +961,7 @@ const products: IProductInput[] = [
     review: 85,
     publisher: "Square Enix",
     delivery: "Digital Key",
+    tag: "best-seller",
   },
   {
     name: "Final Fantasy XV (PS)",
@@ -1047,6 +1057,7 @@ const products: IProductInput[] = [
     review: 85,
     publisher: "miHoYo",
     delivery: "Account",
+    tag: "best-sellers",
   },
 
   /* Ghost Of Tsushima */
@@ -1107,6 +1118,7 @@ const products: IProductInput[] = [
     review: 94,
     publisher: "Sony Interactive Entertainment",
     delivery: "Physical DVD",
+    tag: "best-sellers",
   },
 
   /* God Of War */
@@ -1185,6 +1197,7 @@ const products: IProductInput[] = [
     review: 88,
     publisher: "Cygames",
     delivery: "Digital Key",
+    tag: "best-seller",
   },
 
   /* GTA V */
@@ -1205,6 +1218,7 @@ const products: IProductInput[] = [
     review: 94,
     publisher: "Rockstar Games",
     delivery: "Digital Key",
+    tag: "daily-deals",
   },
 
   /* Guardians Of The Galaxy */
@@ -1265,6 +1279,7 @@ const products: IProductInput[] = [
     review: 86,
     publisher: "IO Interactive",
     delivery: "Digital Key",
+    tag: "daily-deals",
   },
 
   /* Hogwarts Legacy */
@@ -1362,6 +1377,7 @@ const products: IProductInput[] = [
     review: 82,
     publisher: "Neowiz Games",
     delivery: "Digital Key",
+    tag: "daily-deals",
   },
   /* Like A Dragon Gaiden */
   {
@@ -1437,6 +1453,7 @@ const products: IProductInput[] = [
     review: 95,
     publisher: "Mojang Studios",
     delivery: "Account",
+    tag: "daily-deals",
   },
   /* Mirror Edge Catalyst */
   {
@@ -1474,6 +1491,7 @@ const products: IProductInput[] = [
     review: 78,
     publisher: "Electronic Arts",
     delivery: "Digital Key",
+    tag: "daily-deals",
   },
   /* Mirror Edge  */
   {
@@ -1703,6 +1721,7 @@ const products: IProductInput[] = [
     review: 94,
     publisher: "Rockstar Games",
     delivery: "Physical DVD",
+    tag: "daily-deals",
   },
 
   /* Remnent 2 */
@@ -2094,6 +2113,7 @@ const products: IProductInput[] = [
     review: 95,
     publisher: "CD Projekt",
     delivery: "Physical DVD",
+    tag: "daily-deals",
   },
 
   /* Tiny Tina Wonderlands */
@@ -2212,6 +2232,7 @@ const products: IProductInput[] = [
     review: 87,
     publisher: "SEGA",
     delivery: "Digital Key",
+    tag: "best-sellers",
   },
 ];
 
