@@ -1,7 +1,8 @@
+import { DataType, IProductInput } from "@/types";
 import { toSlug } from "./utils";
 
 /* Total 115 Games */
-const products = [
+const products: IProductInput[] = [
   /* A Plague Tale Innocent */
   {
     name: "A Plague Tale Innocent (Steam)",
@@ -2214,7 +2215,7 @@ const products = [
   },
 ];
 
-const data = {
+const data: DataType = {
   products,
   headerMenus: [
     { name: "PC", href: "/pc" },

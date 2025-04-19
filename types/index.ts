@@ -1,6 +1,5 @@
-import { ProductInputSchema } from "@/lib/validator";
 import { z } from "zod";
-
+import { ProductInputSchema } from "../prisma/product.schema";
 export type IProductInput = z.infer<typeof ProductInputSchema>;
 
 export type DataType = {

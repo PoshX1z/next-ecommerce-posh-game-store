@@ -1,0 +1,45 @@
+datasource db{
+    provider: "postgresql" // Type of database. Ex: mysql, sqlserver, sqlite.
+    url: env("DATABASE_URI")
+}
+generator client{
+    provider: "prisma-client-js" // Generate typescript compatible prisma client in next js project.   
+}
+
+// Model
+
+model Product{
+    id String @id @default(cuid())
+    name String
+    slug String @unique
+    image String
+    platform String
+    platformImageIcon String
+    edition String
+    description String
+    price Int
+    countInStock Int
+    numSales Int
+    releaseDate String
+    developer String
+    review Int
+    publisher String
+    delivery String
+
+    createdAt DateTime @default(now())
+    updateAt DateTime @updateAt
+}
+
+
+
+
+
+/* Real usage 
+
+import { PrismaClient } from '@prisma/client';
+const prisma = new PrismaClient();
+const products = await prisma.product.findMany();
+
+npx prisma generate // It will create a file in node_modules/@prisma/client 
+npx prisma db push
+*/
