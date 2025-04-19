@@ -2,6 +2,7 @@ import HomeCarousal from "@/components/shared/home/HomeCarousel";
 import data from "@/lib/data";
 
 export default function Page() {
+  const;
   return (
     <div>
       <div className="pt-3">
