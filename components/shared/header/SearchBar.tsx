@@ -13,7 +13,7 @@ const SearchBar = () => {
       />
       <button
         type="submit"
-        className="bg-blue-500 p-2 rounded-md text-white cursor-pointer hover:bg-blue-600 transition duration-200 ease-in-out"
+        className="bg-blue-500 p-2 rounded-3xl text-white cursor-pointer hover:bg-blue-600 transition duration-200 ease-in-out"
       >
         <SearchIcon />
       </button>
