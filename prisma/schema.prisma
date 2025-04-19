@@ -1,3 +1,5 @@
+// Prisma initiation (db pull, db push and generated prisma/client). 
+
 datasource db{
     provider = "postgresql" 
     url = env("DATABASE_URI")
@@ -31,15 +33,3 @@ model Product{
     createdAt DateTime @default(now())
     updateAt DateTime @updatedAt
 }
-
-
-
-
-
-/* Real usage 
-
-import { PrismaClient } from '@prisma/client';
-const prisma = new PrismaClient();
-const products = await prisma.product.findMany();
-
-*/

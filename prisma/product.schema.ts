@@ -1,3 +1,4 @@
+// Type validation on product.
 import { z } from "zod";
 
 export const ProductInputSchema = z.object({
