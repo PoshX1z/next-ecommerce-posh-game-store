@@ -1,12 +1,14 @@
 datasource db{
-    provider: "postgresql" // Type of database. Ex: mysql, sqlserver, sqlite.
-    url: env("DATABASE_URI")
+    provider = "postgresql" 
+    url = env("DATABASE_URI")
 }
+// Generate typescript compatible prisma client in next js project.   
 generator client{
-    provider: "prisma-client-js" // Generate typescript compatible prisma client in next js project.   
+    provider = "prisma-client-js" 
+    output = "./generated/client"
 }
 
-// Model
+// Model (This will be created as actual table on database when using npx prisma db push).
 
 model Product{
     id String @id @default(cuid())
@@ -27,7 +29,7 @@ model Product{
     delivery String
 
     createdAt DateTime @default(now())
-    updateAt DateTime @updateAt
+    updateAt DateTime @updatedAt
 }
 
 
@@ -40,6 +42,4 @@ import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 const products = await prisma.product.findMany();
 
-npx prisma generate // It will create a file in node_modules/@prisma/client 
-npx prisma db push
 */
