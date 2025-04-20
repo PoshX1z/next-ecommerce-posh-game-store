@@ -38,7 +38,7 @@ const ProductCard = ({ product }: { product: IProductInput }) => {
           {product.name}
         </h1>
         <div className="text-center text-lg font-bold text-yellow-300">
-          {product.price.toLocaleString()} THB
+          ฿{product.price.toLocaleString()}
         </div>
       </div>
     </li>
