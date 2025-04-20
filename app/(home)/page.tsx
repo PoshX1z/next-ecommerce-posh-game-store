@@ -19,13 +19,13 @@ export default async function Page() {
     <div>
       <div className="pt-3">
         <HomeCarousal items={data.homeCarousels} />
-        <Title title={"BEST SELLERS"} />
+        <Title title={"BEST SELLERS"} large />
         <div className="flex gap-5 flex-wrap justify-center px-4 py-6">
           {bestSellersProducts.map((product) => (
             <ProductCard key={product.slug} product={product} />
           ))}
         </div>
-        <Title title={"Daily Deals"} />
+        <Title title={"Daily Deals"} large />
 
         <div className="flex gap-5 flex-wrap justify-center px-4 py-6">
           {dailyDealsProducts.map((product) => (
