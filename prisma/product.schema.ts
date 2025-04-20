@@ -32,5 +32,5 @@ export const ProductInputSchema = z.object({
     .max(100, "Review score must be at most 100"),
   publisher: z.string().min(1, "Publisher is required"),
   delivery: z.string().min(1, "Delivery type is required"),
-  tag: z.string().optional(),
+  tag: z.string().nullable().optional(),
 });

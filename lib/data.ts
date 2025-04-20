@@ -1139,6 +1139,7 @@ const products: IProductInput[] = [
     review: 93,
     publisher: "Sony Interactive Entertainment",
     delivery: "Digital Key",
+    tag: "best-sellers",
   },
 
   /* Godfall */
@@ -1179,6 +1180,7 @@ const products: IProductInput[] = [
     review: 88,
     publisher: "Cygames",
     delivery: "Digital Key",
+    tag: "best-sellers",
   },
   {
     name: "Grandblue Fantasy Relink (PS)",
@@ -1300,6 +1302,7 @@ const products: IProductInput[] = [
     review: 87,
     publisher: "Warner Bros. Interactive Entertainment",
     delivery: "Digital Key",
+    tag: "daily-deals",
   },
 
   /* Horizon Forbidden West */
@@ -1320,6 +1323,7 @@ const products: IProductInput[] = [
     review: 88,
     publisher: "Sony Interactive Entertainment",
     delivery: "Physical DVD",
+    tag: "daily-deals",
   },
   /* Horizon Zero Dawn */
   {
@@ -1434,6 +1438,7 @@ const products: IProductInput[] = [
     review: 83,
     publisher: "Konami",
     delivery: "Digital Key",
+    tag: "daily-deals",
   },
   /* Minecraft */
   {
