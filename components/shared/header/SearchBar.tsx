@@ -1,14 +1,30 @@
+"use client";
 import { Input } from "@/components/ui/input";
 import { SearchIcon } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 const SearchBar = () => {
+  const router = useRouter();
+  const [searchTerm, setSearchTerm] = useState("");
+
+  // When click at search icon, then link to search page
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchTerm.trim()) {
+      router.push(`/search?q=${encodeURIComponent(searchTerm.trim())}`);
+    }
+  };
+
   return (
-    <form method="GET" action="/search" className="flex items-center">
+    <form onSubmit={handleSubmit} className="flex items-center">
       <Input
         name="q"
         type="search"
         placeholder="Search game..."
         className="flex-1 rounded-3xl bg-white text-black text-base"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
       />
       <button
         type="submit"
