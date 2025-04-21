@@ -1,5 +1,6 @@
 import { getProductsBySlug } from "@/prisma/actions/product.actions";
 
+// Generate metadata (for SEO purpose).
 export async function generateMetadata(props: {
   params: Promise<{ slug: string }>;
 }) {
