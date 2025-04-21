@@ -1,5 +1,4 @@
 import React from "react";
-import HeaderTop from "./HeaderTop";
 import { APP_NAME } from "@/lib/constants";
 import Link from "next/link";
 import SearchBar from "./SearchBar";
@@ -9,10 +8,6 @@ import data from "@/lib/data";
 const Header = () => {
   return (
     <div>
-      {/* Header Top */}
-      <div className="hidden md:block">
-        <HeaderTop />
-      </div>
       {/* Header Content */}
       <div className="flex justify-between items-center p-4">
         <div>
