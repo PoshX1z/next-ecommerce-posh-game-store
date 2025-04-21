@@ -126,4 +126,7 @@ body {
   }
 }
 @layer utilities {
+  .product-wrapper {
+    @apply flex gap-5 flex-wrap py-4;
+  }
 }

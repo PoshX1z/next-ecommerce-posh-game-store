@@ -6,7 +6,7 @@ import React from "react";
 
 const ProductCard = ({ product }: { product: IProductInput }) => {
   return (
-    <li className="list-none w-72 h-96 flex flex-col justify-between rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 bg-gradient-to-br from-sky-950 to-sky-900 border border-sky-700">
+    <li className="list-none w-60 h-96 flex flex-col justify-between rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 bg-gradient-to-br from-sky-950 to-sky-900 border border-sky-700">
       <div className="relative w-full h-3/4">
         <Link href={product.slug} className="group block w-full h-full">
           <Image

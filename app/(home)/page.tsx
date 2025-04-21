@@ -2,32 +2,24 @@ import HomeCarousal from "@/components/shared/home/HomeCarousel";
 import ProductCard from "@/components/shared/product/ProductCard";
 import Title from "@/components/shared/Title";
 import data from "@/lib/data";
-import { prisma } from "@/prisma/prisma";
+import { getProductsByTag } from "@/prisma/actions/product.actions";
 
 export default async function Page() {
-  const bestSellersProducts = await prisma.product.findMany({
-    where: {
-      tag: "best-sellers",
-    },
-  });
-  const dailyDealsProducts = await prisma.product.findMany({
-    where: {
-      tag: "daily-deals",
-    },
-  });
+  const bestSellersProducts = await getProductsByTag("best-sellers");
+  const dailyDealsProducts = await getProductsByTag("daily-deals");
   return (
     <div>
       <div className="pt-3">
         <HomeCarousal items={data.homeCarousels} />
         <Title title={"BEST SELLERS"} large />
-        <div className="flex gap-5 flex-wrap justify-center px-4 py-6">
+        <div className="product-wrapper">
           {bestSellersProducts.map((product) => (
             <ProductCard key={product.slug} product={product} />
           ))}
         </div>
         <Title title={"Daily Deals"} large />
 
-        <div className="flex gap-5 flex-wrap justify-center px-4 py-6">
+        <div className="product-wrapper">
           {dailyDealsProducts.map((product) => (
             <ProductCard key={product.slug} product={product} />
           ))}

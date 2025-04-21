@@ -29,3 +29,12 @@ export const getProductsBySlug = async (slug: string) => {
   });
   return products;
 };
+
+export const getProductsByTag = async (tag: string) => {
+  const products = await prisma.product.findMany({
+    where: {
+      tag: tag,
+    },
+  });
+  return products;
+};

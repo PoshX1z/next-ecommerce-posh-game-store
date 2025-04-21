@@ -15,18 +15,25 @@ export default async function Page() {
   });
   return (
     <div>
-      <Title title="PC:" small />
-      <div className="flex gap-5 flex-wrap justify-center px-4 py-6">
+      <Title title="PC" large />
+
+      <Title title="STEAM" isVariantColor />
+
+      <div className="product-wrapper">
         {steamProducts.map((steamProduct) => (
           <ProductCard key={steamProduct.slug} product={steamProduct} />
         ))}
       </div>
-      <div className="flex gap-5 flex-wrap justify-center px-4 py-6">
+      <Title title="Epic Game" isVariantColor />
+
+      <div className="product-wrapper">
         {epicGameProducts.map((epicGameProduct) => (
           <ProductCard key={epicGameProduct.slug} product={epicGameProduct} />
         ))}
       </div>
-      <div className="flex gap-5 flex-wrap justify-center px-4 py-6">
+      <Title title="Ubisoft" isVariantColor />
+
+      <div className="product-wrapper">
         {ubisoftProducts.map((ubisoftProduct) => (
           <ProductCard key={ubisoftProduct.slug} product={ubisoftProduct} />
         ))}
