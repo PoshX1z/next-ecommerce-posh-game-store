@@ -31,6 +31,15 @@ const ProductCard = ({ product }: { product: IProductInput }) => {
             </div>
           </Link>
         </div>
+        <div className="absolute top-2 left-2">
+          <Image
+            src={product.platformImageIcon}
+            alt={product.platform}
+            width={40}
+            height={40}
+            priority
+          />
+        </div>
       </div>
 
       <div className="p-1 h-1/4 flex flex-col justify-center">
