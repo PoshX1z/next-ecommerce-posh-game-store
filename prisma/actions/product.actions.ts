@@ -38,3 +38,26 @@ export const getProductsByTag = async (tag: string) => {
   });
   return products;
 };
+
+export const getRelatedProducts = async ({
+  platform,
+  excludeSlug,
+  limit = 10,
+}: {
+  platform: string;
+  excludeSlug: string;
+  limit?: number;
+}) => {
+  const products = await prisma.product.findMany({
+    where: {
+      platform: platform,
+      NOT: {
+        slug: excludeSlug,
+      },
+    },
+  });
+
+  const shuffledProducts = products.sort(() => Math.random() - 0.5);
+
+  return shuffledProducts.slice(0, limit);
+};
