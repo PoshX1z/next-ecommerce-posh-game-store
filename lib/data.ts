@@ -23,10 +23,10 @@ const products: IProductInput[] = [
     delivery: "Digital Key",
   },
   {
-    name: "A Plague Tale Innocent (PS)",
-    slug: toSlug("A Plague Tale Innocent (PS)"),
+    name: "A Plague Tale Innocent (Playstation)",
+    slug: toSlug("A Plague Tale Innocent (Playstation)"),
     image: "/images/games/A Plague Tale Innocent.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Standard",
     description:
@@ -101,10 +101,10 @@ const products: IProductInput[] = [
     tag: "daily-deals",
   },
   {
-    name: "Assassin's Creed Odyssey (PS)",
-    slug: toSlug("Assassin's Creed Odyssey (PS)"),
+    name: "Assassin's Creed Odyssey (Playstation)",
+    slug: toSlug("Assassin's Creed Odyssey (Playstation)"),
     image: "/images/games/Assassin's Creed Odyssey.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Ultimate",
     description:
@@ -139,10 +139,10 @@ const products: IProductInput[] = [
     delivery: "Digital Key",
   },
   {
-    name: "Assassin's Creed Valhalla (PS)",
-    slug: toSlug("Assassin's Creed Valhalla (PS)"),
+    name: "Assassin's Creed Valhalla (Playstation)",
+    slug: toSlug("Assassin's Creed Valhalla (Playstation)"),
     image: "/images/games/Assassin's Creed Valhalla.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Deluxe",
     description:
@@ -252,10 +252,10 @@ const products: IProductInput[] = [
     delivery: "Digital Key",
   },
   {
-    name: "Black Myth Wukong (PS)",
-    slug: toSlug("Black Myth Wukong (PS)"),
+    name: "Black Myth Wukong (Playstation)",
+    slug: toSlug("Black Myth Wukong (Playstation)"),
     image: "/images/games/Black Myth Wukong.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Standard",
     description:
@@ -292,10 +292,10 @@ const products: IProductInput[] = [
     tag: "daily-deals",
   },
   {
-    name: "Call Of Duty Black Ops 6 (PS)",
-    slug: toSlug("Call Of Duty Black Ops 6 (PS)"),
+    name: "Call Of Duty Black Ops 6 (Playstation)",
+    slug: toSlug("Call Of Duty Black Ops 6 (Playstation)"),
     image: "/images/games/Call Of Duty Black Ops 6.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Standard",
     description:
@@ -369,10 +369,10 @@ const products: IProductInput[] = [
     delivery: "Account",
   },
   {
-    name: "Callisto Protocol (PS)",
-    slug: toSlug("Callisto Protocol (PS)"),
+    name: "Callisto Protocol (Playstation)",
+    slug: toSlug("Callisto Protocol (Playstation)"),
     image: "/images/games/Callisto Protocol.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Day One",
     description:
@@ -408,10 +408,10 @@ const products: IProductInput[] = [
     delivery: "Digital Key",
   },
   {
-    name: "Control (PS)",
-    slug: toSlug("Control (PS)"),
+    name: "Control (Playstation)",
+    slug: toSlug("Control (Playstation)"),
     image: "/images/games/Control.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Ultimate",
     description:
@@ -448,10 +448,10 @@ const products: IProductInput[] = [
   },
 
   {
-    name: "Cyberpunk 2077 (PS)",
-    slug: toSlug("Cyberpunk 2077 (PS)"),
+    name: "Cyberpunk 2077 (Playstation)",
+    slug: toSlug("Cyberpunk 2077 (Playstation)"),
     image: "/images/games/Cyberpunk 2077.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Phantom Liberty Bundle",
     description:
@@ -503,10 +503,10 @@ const products: IProductInput[] = [
     delivery: "Digital Key",
   },
   {
-    name: "Death Stranding (PS)",
-    slug: toSlug("Death Stranding (PS)"),
+    name: "Death Stranding (Playstation)",
+    slug: toSlug("Death Stranding (Playstation)"),
     image: "/images/games/Death Stranding.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Director's Cut",
     description:
@@ -560,10 +560,10 @@ const products: IProductInput[] = [
     delivery: "Digital Key",
   },
   {
-    name: "Devil May Cry 5 (PS)",
-    slug: toSlug("Devil May Cry 5 (PS)"),
+    name: "Devil May Cry 5 (Playstation)",
+    slug: toSlug("Devil May Cry 5 (Playstation)"),
     image: "/images/games/Devil May Cry 5.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Special",
     description:
@@ -605,7 +605,7 @@ const products: IProductInput[] = [
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Deluxe",
     description:
-      "A high-speed, demon-slaying FPS from id Software. Continue the fight as the Doom Slayer in a battle against Hell's armies.",
+      "A high-speed, demon-slaying FPlaystation from id Software. Continue the fight as the Doom Slayer in a battle against Hell's armies.",
     price: 1150,
     countInStock: 292,
     numSales: 1740,
@@ -623,7 +623,7 @@ const products: IProductInput[] = [
     platformImageIcon: "/images/icons/microsoft-icon.png",
     edition: "Deluxe",
     description:
-      "A high-speed, demon-slaying FPS from id Software. Continue the fight as the Doom Slayer in a battle against Hell's armies.",
+      "A high-speed, demon-slaying FPlaystation from id Software. Continue the fight as the Doom Slayer in a battle against Hell's armies.",
     price: 1150,
     countInStock: 120,
     numSales: 790,
@@ -634,14 +634,14 @@ const products: IProductInput[] = [
     delivery: "Digital Key",
   },
   {
-    name: "Doom Eternal (PS)",
-    slug: toSlug("Doom Eternal (PS)"),
+    name: "Doom Eternal (Playstation)",
+    slug: toSlug("Doom Eternal (Playstation)"),
     image: "/images/games/Doom Eternal.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Deluxe",
     description:
-      "A high-speed, demon-slaying FPS from id Software. Continue the fight as the Doom Slayer in a battle against Hell's armies.",
+      "A high-speed, demon-slaying FPlaystation from id Software. Continue the fight as the Doom Slayer in a battle against Hell's armies.",
     price: 1290,
     countInStock: 161,
     numSales: 910,
@@ -672,10 +672,10 @@ const products: IProductInput[] = [
     delivery: "Digital Key",
   },
   {
-    name: "Dragon Age Inquisition (PS)",
-    slug: toSlug("Dragon Age Inquisition (PS)"),
+    name: "Dragon Age Inquisition (Playstation)",
+    slug: toSlug("Dragon Age Inquisition (Playstation)"),
     image: "/images/games/Dragon Age Inquisition.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Game of the Year",
     description:
@@ -710,10 +710,10 @@ const products: IProductInput[] = [
     delivery: "Digital Key",
   },
   {
-    name: "Dragon Ball Z Kakarot (PS)",
-    slug: toSlug("Dragon Ball Z Kakarot (PS)"),
+    name: "Dragon Ball Z Kakarot (Playstation)",
+    slug: toSlug("Dragon Ball Z Kakarot (Playstation)"),
     image: "/images/games/Dragon Ball Z Kakarot.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Legendary",
     description:
@@ -765,10 +765,10 @@ const products: IProductInput[] = [
     delivery: "Digital Key",
   },
   {
-    name: "Elden Ring (PS)",
-    slug: toSlug("Elden Ring (PS)"),
+    name: "Elden Ring (Playstation)",
+    slug: toSlug("Elden Ring (Playstation)"),
     image: "/images/games/Elden Ring.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Standard",
     description:
@@ -864,10 +864,10 @@ const products: IProductInput[] = [
 
   /* Final Fantasy Origin Stranger Of Paradise */
   {
-    name: "Final Fantasy Origin Stranger Of Paradise (PS)",
-    slug: toSlug("Final Fantasy Origin Stranger Of Paradise (PS)"),
+    name: "Final Fantasy Origin Stranger Of Paradise (Playstation)",
+    slug: toSlug("Final Fantasy Origin Stranger Of Paradise (Playstation)"),
     image: "/images/games/Final Fantasy Origin Stranger Of Paradise.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Standard",
     description:
@@ -885,10 +885,10 @@ const products: IProductInput[] = [
 
   /* Final Fantasy VII Rebirth */
   {
-    name: "Final Fantasy VII Rebirth (PS)",
-    slug: toSlug("Final Fantasy VII Rebirth (PS)"),
+    name: "Final Fantasy VII Rebirth (Playstation)",
+    slug: toSlug("Final Fantasy VII Rebirth (Playstation)"),
     image: "/images/games/Final Fantasy VII Rebirth.jpg",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Deluxe",
     description:
@@ -964,10 +964,10 @@ const products: IProductInput[] = [
     tag: "best-seller",
   },
   {
-    name: "Final Fantasy XV (PS)",
-    slug: toSlug("Final Fantasy XV (PS)"),
+    name: "Final Fantasy XV (Playstation)",
+    slug: toSlug("Final Fantasy XV (Playstation)"),
     image: "/images/games/Final Fantasy XV.jpg",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.jpg",
     edition: "Royal",
     description:
@@ -984,10 +984,10 @@ const products: IProductInput[] = [
 
   /* Final Fantasy XVI */
   {
-    name: "Final Fantasy XVI (PS)",
-    slug: toSlug("Final Fantasy XVI (PS)"),
+    name: "Final Fantasy XVI (Playstation)",
+    slug: toSlug("Final Fantasy XVI (Playstation)"),
     image: "/images/games/Final Fantasy XVI.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Standard",
     description:
@@ -1041,15 +1041,15 @@ const products: IProductInput[] = [
 
   /* Genshin Impact */
   {
-    name: "Genshin Impact (PS)",
-    slug: toSlug("Genshin Impact (PS)"),
+    name: "Genshin Impact (Playstation)",
+    slug: toSlug("Genshin Impact (Playstation)"),
     image: "/images/games/Genshin Impact.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Starter",
     description:
       "Genshin Impact is an open-world action RPG developed and published by miHoYo. It features an anime-style fantasy world with elemental combat and character switching.",
-    price: 0,
+    price: 1999,
     countInStock: 999,
     numSales: 1000,
     releaseDate: "28-09-2020",
@@ -1062,10 +1062,10 @@ const products: IProductInput[] = [
 
   /* Ghost Of Tsushima */
   {
-    name: "Ghost Of Tsushima (PS)",
-    slug: toSlug("Ghost Of Tsushima (PS)"),
+    name: "Ghost Of Tsushima (Playstation)",
+    slug: toSlug("Ghost Of Tsushima (Playstation)"),
     image: "/images/games/Ghost Of Tsushima.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Director's Cut",
     description:
@@ -1102,10 +1102,10 @@ const products: IProductInput[] = [
 
   /* God Of War Ragnarok */
   {
-    name: "God Of War Ragnarok (PS)",
-    slug: toSlug("God Of War Ragnarok (PS)"),
+    name: "God Of War Ragnarok (Playstation)",
+    slug: toSlug("God Of War Ragnarok (Playstation)"),
     image: "/images/games/God Of War Ragnarok.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Standard",
     description:
@@ -1183,10 +1183,10 @@ const products: IProductInput[] = [
     tag: "best-sellers",
   },
   {
-    name: "Grandblue Fantasy Relink (PS)",
-    slug: toSlug("Grandblue Fantasy Relink (PS)"),
+    name: "Grandblue Fantasy Relink (Playstation)",
+    slug: toSlug("Grandblue Fantasy Relink (Playstation)"),
     image: "/images/games/Grandblue Fantasy Relink.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Deluxe",
     description:
@@ -1307,10 +1307,10 @@ const products: IProductInput[] = [
 
   /* Horizon Forbidden West */
   {
-    name: "Horizon Forbidden West (PS)",
-    slug: toSlug("Horizon Forbidden West (PS)"),
+    name: "Horizon Forbidden West (Playstation)",
+    slug: toSlug("Horizon Forbidden West (Playstation)"),
     image: "/images/games/Horizon Forbidden West.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Standard",
     description:
@@ -1556,10 +1556,10 @@ const products: IProductInput[] = [
   },
   /* Monster Hunter Wilds */
   {
-    name: "Monster Hunter Wilds (PS)",
-    slug: toSlug("Monster Hunter Wilds (PS)"),
+    name: "Monster Hunter Wilds (Playstation)",
+    slug: toSlug("Monster Hunter Wilds (Playstation)"),
     image: "/images/games/Monster Hunter Wilds.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Standard",
     description:
@@ -1594,10 +1594,10 @@ const products: IProductInput[] = [
     delivery: "Digital Key",
   },
   {
-    name: "Monster Hunter World Iceborne (PS)",
-    slug: toSlug("Monster Hunter World Iceborne (PS)"),
+    name: "Monster Hunter World Iceborne (Playstation)",
+    slug: toSlug("Monster Hunter World Iceborne (Playstation)"),
     image: "/images/games/Monster Hunter World Iceborne.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Master",
     description:
@@ -1652,10 +1652,10 @@ const products: IProductInput[] = [
     delivery: "Digital Key",
   },
   {
-    name: "Nier R Automata (PS)",
-    slug: toSlug("Nier R Automata (PS)"),
+    name: "Nier R Automata (Playstation)",
+    slug: toSlug("Nier R Automata (Playstation)"),
     image: "/images/games/Nier R Automata.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Game of the YoRHa",
     description:
@@ -1672,10 +1672,10 @@ const products: IProductInput[] = [
 
   /* Rachet & Clank Rift Apart */
   {
-    name: "Rachet & Clank Rift Apart (PS)",
-    slug: toSlug("Rachet & Clank Rift Apart (PS)"),
+    name: "Rachet & Clank Rift Apart (Playstation)",
+    slug: toSlug("Rachet & Clank Rift Apart (Playstation)"),
     image: "/images/games/Rachet & Clank Rift Apart.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Standard",
     description:
@@ -1710,10 +1710,10 @@ const products: IProductInput[] = [
     delivery: "Digital Key",
   },
   {
-    name: "Red Dead Redemtion 2 (PS)",
-    slug: toSlug("Red Dead Redemtion 2 (PS)"),
+    name: "Red Dead Redemtion 2 (Playstation)",
+    slug: toSlug("Red Dead Redemtion 2 (Playstation)"),
     image: "/images/games/Red Dead Redemtion 2.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Ultimate",
     description:
@@ -1768,10 +1768,10 @@ const products: IProductInput[] = [
     delivery: "Digital Key",
   },
   {
-    name: "Resident Evil 4 (PS)",
-    slug: toSlug("Resident Evil 4 (PS)"),
+    name: "Resident Evil 4 (Playstation)",
+    slug: toSlug("Resident Evil 4 (Playstation)"),
     image: "/images/games/Resident Evil 4.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Deluxe",
     description:
@@ -1808,10 +1808,10 @@ const products: IProductInput[] = [
 
   /* Scarlet Nexus */
   {
-    name: "Scarlet Nexus (PS)",
-    slug: toSlug("Scarlet Nexus (PS)"),
+    name: "Scarlet Nexus (Playstation)",
+    slug: toSlug("Scarlet Nexus (Playstation)"),
     image: "/images/games/Scarlet Nexus.jpg",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Deluxe",
     description:
@@ -1865,10 +1865,10 @@ const products: IProductInput[] = [
     delivery: "Digital Key",
   },
   {
-    name: "Sekiro Shadow Die Twice (PS)",
-    slug: toSlug("Sekiro Shadow Die Twice (PS)"),
+    name: "Sekiro Shadow Die Twice (Playstation)",
+    slug: toSlug("Sekiro Shadow Die Twice (Playstation)"),
     image: "/images/games/Sekiro Shadow Die Twice.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Game of the Year",
     description:
@@ -1905,10 +1905,10 @@ const products: IProductInput[] = [
 
   /* Spider Man Mile Morales */
   {
-    name: "Spider Man Mile Morales (PS)",
-    slug: toSlug("Spider Man Mile Morales (PS)"),
+    name: "Spider Man Mile Morales (Playstation)",
+    slug: toSlug("Spider Man Mile Morales (Playstation)"),
     image: "/images/games/Spider Man Mile Morales.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Launch",
     description:
@@ -2005,10 +2005,10 @@ const products: IProductInput[] = [
 
   /* Tales Of Arise */
   {
-    name: "Tales Of Arise (PS)",
-    slug: toSlug("Tales Of Arise (PS)"),
+    name: "Tales Of Arise (Playstation)",
+    slug: toSlug("Tales Of Arise (Playstation)"),
     image: "/images/games/Tales Of Arise.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Standard",
     description:
@@ -2025,10 +2025,10 @@ const products: IProductInput[] = [
 
   /* The Last Of Us Part II Remastered */
   {
-    name: "The Last Of Us Part II Remastered (PS)",
-    slug: toSlug("The Last Of Us Part II Remastered (PS)"),
+    name: "The Last Of Us Part II Remastered (Playstation)",
+    slug: toSlug("The Last Of Us Part II Remastered (Playstation)"),
     image: "/images/games/The Last Of Us Part II Remastered.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Remastered",
     description:
@@ -2044,10 +2044,10 @@ const products: IProductInput[] = [
   },
   /* The Last Of Us Remake */
   {
-    name: "The Last Of Us Remake (PS)",
-    slug: toSlug("The Last Of Us Remake (PS)"),
+    name: "The Last Of Us Remake (Playstation)",
+    slug: toSlug("The Last Of Us Remake (Playstation)"),
     image: "/images/games/The Last Of Us Remake.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Remake",
     description:
@@ -2102,10 +2102,10 @@ const products: IProductInput[] = [
     delivery: "Digital Key",
   },
   {
-    name: "The Witcher 3 (PS)",
-    slug: toSlug("The Witcher 3 (PS)"),
+    name: "The Witcher 3 (Playstation)",
+    slug: toSlug("The Witcher 3 (Playstation)"),
     image: "/images/games/The Witcher 3.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Game of the Year",
     description:
@@ -2143,10 +2143,10 @@ const products: IProductInput[] = [
 
   /* Uncharted 4 */
   {
-    name: "Uncharted 4 (PS)",
-    slug: toSlug("Uncharted 4 (PS)"),
+    name: "Uncharted 4 (Playstation)",
+    slug: toSlug("Uncharted 4 (Playstation)"),
     image: "/images/games/Uncharted 4.png",
-    platform: "PS",
+    platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Standard",
     description:
@@ -2245,7 +2245,7 @@ const data: DataType = {
   products,
   headerMenus: [
     { name: "PC", href: "/pc" },
-    { name: "PS", href: "/ps" },
+    { name: "Playstation", href: "/ps" },
     { name: "XBOX", href: "/xbox" },
     { name: "NINTENDO", href: "/nintendo" },
     { name: "EPIC GAME", href: "/epic-game" },
@@ -2256,7 +2256,7 @@ const data: DataType = {
   ],
   homeCarousels: [
     {
-      name: "Monster Hunter Wilds (PS)",
+      name: "Monster Hunter Wilds (Playstation)",
       image: "/images/home-carousel/Monster Hunter Wilds.jpg",
       href: "/monster-hunter-wilds-ps",
       buttonCaption: "Buy Now",
@@ -2268,13 +2268,13 @@ const data: DataType = {
       buttonCaption: "See This",
     },
     {
-      name: "The Last Of Us Part II Remastered (PS) ",
+      name: "The Last Of Us Part II Remastered (Playstation) ",
       image: "/images/home-carousel/The Last Of Us Part II Remastered.jpg",
       href: "/the-last-of-us-part-ii-remaster-ps",
       buttonCaption: "Release Now",
     },
     {
-      name: "God Of War Ragnarok (PS)",
+      name: "God Of War Ragnarok (Playstation)",
       image: "/images/home-carousel/God Of War Ragnarok.jpeg",
       href: "/god-of-war-ragnarok-ps",
       buttonCaption: "Shop Now",
