@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { Heart, ShoppingCartIcon, User } from "lucide-react";
+import { Heart, ShoppingCartIcon } from "lucide-react";
+import UserButton from "./UserButton";
 
 const Menu = () => {
   return (
@@ -14,9 +15,7 @@ const Menu = () => {
       {/* User profile Icon */}
 
       <div>
-        <Link href="/user-profile">
-          <User />
-        </Link>
+        <UserButton />
       </div>
       {/* Cart Icon */}
       <div>
