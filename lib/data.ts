@@ -2245,11 +2245,11 @@ const data: DataType = {
   products,
   headerMenus: [
     { name: "PC", href: "/pc" },
-    { name: "Playstation", href: "/ps" },
+    { name: "PLAYSTATION", href: "/ps" },
     { name: "XBOX", href: "/xbox" },
     { name: "NINTENDO", href: "/nintendo" },
     { name: "EPIC GAME", href: "/epic-game" },
-    { name: "Ubisoft", href: "/ubisoft" },
+    { name: "UBISOFT", href: "/ubisoft" },
     { name: "DAILY DEALS", href: "/daily-deals" },
     { name: "NEWS", href: "/news" },
     { name: "COMING SOON", href: "/coming-soon" },
@@ -2270,7 +2270,7 @@ const data: DataType = {
     {
       name: "The Last Of Us Part II Remastered (Playstation) ",
       image: "/images/home-carousel/The Last Of Us Part II Remastered.jpg",
-      href: "/the-last-of-us-part-ii-remaster-ps",
+      href: "/the-last-of-us-part-ii-remastered-ps",
       buttonCaption: "Release Now",
     },
     {

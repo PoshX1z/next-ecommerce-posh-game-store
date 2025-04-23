@@ -3,14 +3,19 @@ import Title from "@/components/shared/Title";
 import { getProductsByPlatform } from "@/prisma/actions/product.actions";
 
 export default async function Page() {
-  const psProducts = await getProductsByPlatform({ platform: "PS" });
+  const playstationProducts = await getProductsByPlatform({
+    platform: "Playstation",
+  });
 
   return (
     <div>
-      <Title title="PS" large />
+      <Title title="PLAYSTATION" large />
       <div className="product-wrapper">
-        {psProducts.map((psProduct) => (
-          <ProductCard key={psProduct.slug} product={psProduct} />
+        {playstationProducts.map((playstationProduct) => (
+          <ProductCard
+            key={playstationProduct.slug}
+            product={playstationProduct}
+          />
         ))}
       </div>
     </div>

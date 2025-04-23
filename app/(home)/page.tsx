@@ -17,7 +17,7 @@ export default async function Page() {
             <ProductCard key={product.slug} product={product} />
           ))}
         </div>
-        <Title title={"Daily Deals"} large />
+        <Title title={"DAILY DEALS"} large />
 
         <div className="product-wrapper">
           {dailyDealsProducts.map((product) => (

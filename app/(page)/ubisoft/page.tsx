@@ -7,7 +7,7 @@ export default async function Page() {
 
   return (
     <div>
-      <Title title="Ubisoft" large />
+      <Title title="UBISOFT" large />
 
       <div className="product-wrapper">
         {ubisoftProducts.map((ubisoftProduct) => (

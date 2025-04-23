@@ -9,7 +9,7 @@ export default async function Page() {
 
   return (
     <div>
-      <Title title="Epic Game" large />
+      <Title title="EPIC GAME" large />
 
       <div className="product-wrapper">
         {epicGameProducts.map((epicGameProduct) => (

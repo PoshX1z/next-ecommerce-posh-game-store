@@ -9,7 +9,7 @@ export default async function Page() {
 
   return (
     <div>
-      <Title title="Nintendo" large />
+      <Title title="NINTENDO" large />
 
       <div className="product-wrapper">
         {nintendoProducts.map((nintendoProduct) => (

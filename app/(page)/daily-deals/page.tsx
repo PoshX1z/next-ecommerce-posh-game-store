@@ -7,7 +7,7 @@ export default async function Page() {
 
   return (
     <div>
-      <Title title="Daily Deals" large />
+      <Title title="DAILY DEALS" large />
 
       <div className="product-wrapper">
         {dailyDealProducts.map((product) => (
