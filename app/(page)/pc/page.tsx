@@ -5,7 +5,7 @@ import { getProductsByPlatform } from "@/prisma/actions/product.actions";
 export default async function Page() {
   const steamProducts = await getProductsByPlatform({
     platform: "Steam",
-    limit: 40,
+    limit: 999,
   });
   const epicGameProducts = await getProductsByPlatform({
     platform: "Epic Game",

@@ -2258,7 +2258,7 @@ const data: DataType = {
     {
       name: "Monster Hunter Wilds (Playstation)",
       image: "/images/home-carousel/Monster Hunter Wilds.jpg",
-      href: "/monster-hunter-wilds-ps",
+      href: "/monster-hunter-wilds-playstation",
       buttonCaption: "Buy Now",
     },
     {
@@ -2270,13 +2270,13 @@ const data: DataType = {
     {
       name: "The Last Of Us Part II Remastered (Playstation) ",
       image: "/images/home-carousel/The Last Of Us Part II Remastered.jpg",
-      href: "/the-last-of-us-part-ii-remastered-ps",
+      href: "/the-last-of-us-part-ii-remastered-playstation",
       buttonCaption: "Release Now",
     },
     {
       name: "God Of War Ragnarok (Playstation)",
       image: "/images/home-carousel/God Of War Ragnarok.jpeg",
-      href: "/god-of-war-ragnarok-ps",
+      href: "/god-of-war-ragnarok-playstation",
       buttonCaption: "Shop Now",
     },
   ],
