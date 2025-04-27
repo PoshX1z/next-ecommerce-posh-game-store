@@ -2,11 +2,10 @@ import { IProductInput } from "@/types";
 import { Heart, ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
-const ProductCard = ({ product }: { product: IProductInput }) => {
+const Testing = ({ product }: { product: IProductInput }) => {
   return (
-    <li className="list-none w-60 h-96 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 bg-gradient-to-br from-sky-950 to-sky-900 border border-sky-700 pb-1">
+    <li className="list-none w-60 h-96 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 bg-gradient-to-br from-sky-950 to-sky-900 border border-sky-700">
       <div className="relative w-full h-3/4">
         <Link href={product.slug} className="group block w-full h-full">
           <Image
@@ -42,8 +41,8 @@ const ProductCard = ({ product }: { product: IProductInput }) => {
         </div>
       </div>
 
-      <div className="p-1 h-1/4 flex flex-col justify-between">
-        <h1 className="text-base font-semibold text-white text-center line-clamp-2 pt-1">
+      <div className="p-1 h-1/4 flex flex-col justify-center">
+        <h1 className="text-base font-semibold text-white text-center line-clamp-2 mb-1">
           {product.name}
         </h1>
         <div className="text-center text-lg font-bold text-yellow-300">
@@ -54,4 +53,4 @@ const ProductCard = ({ product }: { product: IProductInput }) => {
   );
 };
 
-export default ProductCard;
+export default Testing;

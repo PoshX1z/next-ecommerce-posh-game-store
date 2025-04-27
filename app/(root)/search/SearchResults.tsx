@@ -23,9 +23,9 @@ const SearchResults = () => {
   }, [query]);
   return (
     <div>
-      <div className="flex items-center">
+      <div className="flex items-center gap-3 lg:gap-5">
         <Title title="Search Result for " medium />
-        <h1 className="font-extrabold text-3xl">{query}:</h1>
+        <Title title={`${query}`} small />
       </div>
 
       {products.length > 0 ? (

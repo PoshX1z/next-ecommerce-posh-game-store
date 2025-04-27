@@ -22,7 +22,7 @@ const SearchBar = () => {
         name="q"
         type="search"
         placeholder="Search game..."
-        className="flex-1 rounded-3xl bg-white text-black text-base"
+        className="flex-1 rounded-3xl bg-white text-black text-sm lg:text-base"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />

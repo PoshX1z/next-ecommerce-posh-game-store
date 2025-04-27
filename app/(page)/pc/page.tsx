@@ -17,21 +17,21 @@ export default async function Page() {
     <div>
       <Title title="PC" large />
 
-      <Title title="STEAM" isVariantColor />
+      <Title title="STEAM" small />
 
       <div className="product-wrapper">
         {steamProducts.map((steamProduct) => (
           <ProductCard key={steamProduct.slug} product={steamProduct} />
         ))}
       </div>
-      <Title title="Epic Game" isVariantColor />
+      <Title title="Epic Game" small />
 
       <div className="product-wrapper">
         {epicGameProducts.map((epicGameProduct) => (
           <ProductCard key={epicGameProduct.slug} product={epicGameProduct} />
         ))}
       </div>
-      <Title title="Ubisoft" isVariantColor />
+      <Title title="Ubisoft" small />
 
       <div className="product-wrapper">
         {ubisoftProducts.map((ubisoftProduct) => (
