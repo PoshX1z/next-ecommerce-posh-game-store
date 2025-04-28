@@ -19,8 +19,8 @@ const Footer = () => {
       </div>
 
       {/* Footer content */}
-      <div className="px-10 py-10">
-        <div className="flex flex-wrap justify-around gap-10 border-t border-indigo-800 pt-10">
+      <div className="px-10 py-5 lg:py-10">
+        <div className="flex flex-col lg:flex-row flex-wrap  justify-around gap-10 border-t border-indigo-800 pt-10">
           {/* Section 1 */}
           <div>
             <p className="text-xl font-bold mb-4">{APP_NAME}</p>

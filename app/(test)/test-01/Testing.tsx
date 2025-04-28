@@ -5,8 +5,8 @@ import Link from "next/link";
 
 const Testing = ({ product }: { product: IProductInput }) => {
   return (
-    <li className="list-none w-60 h-96 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 bg-gradient-to-br from-sky-950 to-sky-900 border border-sky-700">
-      <div className="relative w-full h-3/4">
+    <li className="list-none w-[118px] h-80 sm:w-48 sm:h-64 md:w-52 md:h-80 lg:w-60 lg:h-[480px] rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 bg-gradient-to-br from-sky-950 to-sky-900 border border-sky-700 pb-1">
+      <div className="relative w-full h-40 lg:h-80">
         <Link href={product.slug} className="group block w-full h-full">
           <Image
             src={product.image}
@@ -17,20 +17,7 @@ const Testing = ({ product }: { product: IProductInput }) => {
           />
         </Link>
 
-        {/* Icons with their own links */}
-        <div className="absolute top-2 right-2 flex gap-2 z-10">
-          <Link href="/favor" className="z-20">
-            <div className="bg-white/80 rounded-full p-2 hover:bg-white transition">
-              <Heart className="w-5 h-5 text-red-500" />
-            </div>
-          </Link>
-          <Link href="/cart" className="z-20">
-            <div className="bg-white/80 rounded-full p-2 hover:bg-white transition">
-              <ShoppingCart className="w-5 h-5 text-sky-700" />
-            </div>
-          </Link>
-        </div>
-        <div className="absolute top-2 left-2">
+        <div className="absolute top-2 left-2 w-6 h-6 lg:w-10 lg:h-10">
           <Image
             src={product.platformImageIcon}
             alt={product.platform}
@@ -41,12 +28,23 @@ const Testing = ({ product }: { product: IProductInput }) => {
         </div>
       </div>
 
-      <div className="p-1 h-1/4 flex flex-col justify-center">
-        <h1 className="text-base font-semibold text-white text-center line-clamp-2 mb-1">
+      <div className="flex flex-col justify-between  h-1/2 sm:h-5/12 md:h-2/5 lg:h-1/3 p-2 bg-sky-950 rounded-xl shadow-inner">
+        <p className="h-12 text-base text-white font-semibold text-center line-clamp-2">
           {product.name}
-        </h1>
-        <div className="text-center text-lg font-bold text-yellow-300">
+        </p>
+
+        <span className="text-white font-bold text-base lg:text-lg text-center">
           ฿{product.price.toLocaleString()}
+        </span>
+
+        <div className="flex justify-center items-center gap-4 mt-2">
+          <button className="flex items-center justify-center w-10 h-10 rounded-full bg-red-400 hover:bg-red-500 transition-colors">
+            <Heart className="text-white w-5 h-5" />
+          </button>
+
+          <button className="flex items-center justify-center w-10 h-10 rounded-full bg-green-400 hover:bg-green-500 transition-colors">
+            <ShoppingCart className="text-white w-5 h-5" />
+          </button>
         </div>
       </div>
     </li>

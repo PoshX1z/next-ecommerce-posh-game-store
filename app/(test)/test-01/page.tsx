@@ -6,7 +6,7 @@ export default async function Page() {
 
   return (
     <div>
-      <div className="grid grid-cols-5 gap-5 py-4">
+      <div className="product-wrapper">
         {bestSellersProducts.map((product) => (
           <Testing product={product} key={product.slug} />
         ))}

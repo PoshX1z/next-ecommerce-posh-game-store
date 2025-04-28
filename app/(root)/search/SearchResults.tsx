@@ -1,5 +1,5 @@
 "use client";
-import ProductCard from "@/components/shared/product/ProductCard";
+import ProductCard from "@/saves/ProductCard";
 import Title from "@/components/shared/Title";
 import { IProductInput } from "@/types";
 import { useSearchParams } from "next/navigation";
