@@ -1,4 +1,4 @@
-import ProductCard from "@/saves/ProductCard";
+import ProductCard from "@/components/shared/product/ProductCard";
 import Title from "@/components/shared/Title";
 import { getProductsByPlatform } from "@/prisma/actions/product.actions";
 

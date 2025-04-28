@@ -18,7 +18,7 @@ const Header = () => {
         <div>
           <Link
             href="/"
-            className="font-extrabold text-lg md:text-2xl lg:text-5xl"
+            className="font-extrabold text-2xl md:text-4xl lg:text-5xl"
           >
             {APP_NAME}
           </Link>

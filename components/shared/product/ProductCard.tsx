@@ -39,11 +39,11 @@ const ProductCard = ({ product }: { product: IProductInput }) => {
         </span>
 
         <div className="flex justify-center items-center gap-4 mt-2">
-          <button className="flex items-center justify-center w-10 h-10 rounded-full bg-red-400 hover:bg-red-500 transition-colors">
+          <button className="flex items-center justify-center w-10 h-10 rounded-full bg-red-400 hover:bg-red-500 transition-colors cursor-pointer">
             <Heart className="text-white w-5 h-5" />
           </button>
 
-          <button className="flex items-center justify-center w-10 h-10 rounded-full bg-green-400 hover:bg-green-500 transition-colors">
+          <button className="flex items-center justify-center w-10 h-10 rounded-full bg-green-400 hover:bg-green-500 transition-colors cursor-pointer">
             <ShoppingCart className="text-white w-5 h-5" />
           </button>
         </div>

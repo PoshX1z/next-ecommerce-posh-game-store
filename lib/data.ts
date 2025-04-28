@@ -968,7 +968,7 @@ const products: IProductInput[] = [
     slug: toSlug("Final Fantasy XV (Playstation)"),
     image: "/images/games/Final Fantasy XV.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.jpg",
+    platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Royal",
     description:
       "Final Fantasy XV tells the story of Prince Noctis and his comrades in a modern fantasy world filled with epic action and bonds.",

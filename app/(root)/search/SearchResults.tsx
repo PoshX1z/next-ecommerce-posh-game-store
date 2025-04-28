@@ -1,5 +1,5 @@
 "use client";
-import ProductCard from "@/saves/ProductCard";
+import ProductCard from "@/components/shared/product/ProductCard";
 import Title from "@/components/shared/Title";
 import { IProductInput } from "@/types";
 import { useSearchParams } from "next/navigation";
@@ -35,7 +35,9 @@ const SearchResults = () => {
           ))}
         </div>
       ) : (
-        <p className="font-extrabold text-5xl">No products found.</p>
+        <p className="font-extrabold text-xl sm:text-2xl md:text-3xl lg:text-5xl">
+          No products found.
+        </p>
       )}
     </div>
   );

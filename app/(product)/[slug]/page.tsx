@@ -1,4 +1,4 @@
-import ProductCard from "@/saves/ProductCard";
+import ProductCard from "@/components/shared/product/ProductCard";
 import Title from "@/components/shared/Title";
 import {
   getProductsBySlug,
@@ -6,6 +6,7 @@ import {
 } from "@/prisma/actions/product.actions";
 import { Heart, ShoppingCartIcon } from "lucide-react";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 
 // Generate metadata (for SEO purpose).
 export async function generateMetadata(props: {
@@ -15,7 +16,7 @@ export async function generateMetadata(props: {
   const product = await getProductsBySlug(params.slug);
 
   if (!product) {
-    return { title: "Product not found" };
+    return notFound();
   }
   return {
     title: product.name,
@@ -36,10 +37,10 @@ export default async function ProductDetailsPage(props: {
   });
   return (
     <div>
-      <div className="min-h-screen text-white px-6 md:px-16 py-10">
-        <div className="flex flex-col md:flex-row gap-10">
+      <div className="min-h-screen text-white py-10">
+        <div className="flex flex-col md:flex-row gap-10 items-center md:items-start">
           {/* Left: Game Cover */}
-          <div className="relative w-72 h-[500px] rounded-lg overflow-hidden shadow-lg border border-indigo-700">
+          <div className="relative w-44 h-56 sm:w-52 sm:h-80 md:w-60 md:h-96 lg:w-72 lg:h-[500px] rounded-lg overflow-hidden shadow-lg border border-indigo-700">
             <Image
               src={product?.image ?? "/placeholder.png"}
               alt={product?.name ?? "image"}
@@ -78,8 +79,8 @@ export default async function ProductDetailsPage(props: {
             {/* Price Section */}
             <div className="flex items-center gap-6">
               <div>
-                <p className="text-3xl font-extrabold text-white">
-                  ฿{product?.price}
+                <p className="text-3xl font-extrabold text-white px-1">
+                  ฿{product?.price.toLocaleString()}
                 </p>
               </div>
             </div>
@@ -97,54 +98,63 @@ export default async function ProductDetailsPage(props: {
 
             {/* Features */}
             <div className="space-y-2 text-sm text-gray-300">
-              <p className="flex items-center gap-2">
-                ✅ Can activate in Thailand
+              <p className="flex items-center gap-2 text-base md:text-2xl">
+                ✅ Region: Thailand Ready
               </p>
-              <p className="flex items-center gap-2">✅ Currently in stock</p>
-              <p className="flex items-center gap-2">
-                📦 Code delivered to you digitally
+              <p className="flex items-center gap-2 text-base md:text-2xl">
+                ✅ Instant Access Available
               </p>
-              <p className="flex items-center gap-2">
-                💰 Earn 1% cashback when purchasing
+              <p className="flex items-center gap-2 text-base md:text-2xl">
+                📦 Get Your Game Code Instantly
+              </p>
+              <p className="flex items-center gap-2 text-base md:text-2xl">
+                💰 Earn 1% Cash Back on Purchase
               </p>
             </div>
 
             {/* Description */}
             <div>
-              <h2 className="text-lg font-semibold mb-2">Description</h2>
-              <p className="text-gray-300 text-sm">{product?.description}</p>
-            </div>
-
-            {/* Game Details Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm text-gray-400 border-t border-gray-700 pt-4">
-              <p>
-                <span className="text-white">Release Date:</span>{" "}
-                {product?.releaseDate}
-              </p>
-              <p>
-                <span className="text-white">Developer:</span>{" "}
-                {product?.developer}
-              </p>
-              <p>
-                <span className="text-white">Publisher:</span>{" "}
-                {product?.publisher}
-              </p>
-              <p>
-                <span className="text-white">Platform:</span>{" "}
-                {product?.platform}
-              </p>
-              <p>
-                <span className="text-white">Delivery:</span>{" "}
-                {product?.delivery}
-              </p>
-              <p>
-                <span className="text-white">Review:</span> {product?.review}%
+              <h2 className="text-lg md:text-2xl font-semibold mb-2">
+                Description
+              </h2>
+              <p className="text-gray-300 text-sm md:text-lg">
+                {product?.description}
               </p>
             </div>
           </div>
         </div>
+        {/* Game Details Grid */}
+        <div className="w-full overflow-hidden rounded-2xl bg-blue-950 border border-blue-800 mt-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 text-sm text-gray-300">
+            <div className="border-b border-blue-800 p-4 flex flex-col">
+              <span className="text-white font-semibold">Release Date</span>
+              <span className="mt-1">{product?.releaseDate}</span>
+            </div>
+            <div className="border-b border-blue-800 p-4 flex flex-col">
+              <span className="text-white font-semibold">Developer</span>
+              <span className="mt-1">{product?.developer}</span>
+            </div>
+            <div className="border-b border-blue-800 p-4 flex flex-col">
+              <span className="text-white font-semibold">Publisher</span>
+              <span className="mt-1">{product?.publisher}</span>
+            </div>
 
-        <div className="py-30">
+            <div className="p-4 flex flex-col">
+              <span className="text-white font-semibold">Platform</span>
+              <span className="mt-1">{product?.platform}</span>
+            </div>
+            <div className="p-4 flex flex-col">
+              <span className="text-white font-semibold">Delivery</span>
+              <span className="mt-1">{product?.delivery}</span>
+            </div>
+            <div className="p-4 flex flex-col">
+              <span className="text-white font-semibold">Review</span>
+              <span className="mt-1">{product?.review}%</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="py-10 md:py-20">
           <Title title="You may look for:" medium />
           <div className="product-wrapper">
             {relatedProducts.map((product) => (
