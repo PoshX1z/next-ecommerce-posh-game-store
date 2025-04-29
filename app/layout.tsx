@@ -4,6 +4,9 @@ import "./globals.css";
 import { APP_DESCRIPTION, APP_NAME } from "@/lib/constants";
 import Footer from "@/components/shared/Footer";
 import HeaderTop from "@/components/shared/header/HeaderTop";
+import { getServerSession } from "next-auth";
+import SessionWrapper from "@/components/shared/SessionWrapper";
+import { authOptions } from "@/auth";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,23 +24,26 @@ export const metadata: Metadata = {
   description: APP_DESCRIPTION,
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const session = await getServerSession(authOptions);
   return (
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="hidden md:block">
-          <HeaderTop />
-        </div>
-        <div className="max-w-7xl mx-auto">{children}</div>
-        <div>
-          <Footer />
-        </div>
+        <SessionWrapper session={session}>
+          <div className="hidden md:block">
+            <HeaderTop />
+          </div>
+          <div className="max-w-7xl mx-auto">{children}</div>
+          <div>
+            <Footer />
+          </div>
+        </SessionWrapper>
       </body>
     </html>
   );
