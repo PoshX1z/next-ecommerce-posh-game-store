@@ -16,6 +16,8 @@ npx prisma generate (It will create a file in node_modules/@prisma/client, do th
 npx prisma db push (Use when already has prisma models and want to create a table on database from them, do this on every schema.prisma changes (must delete existing item on database first))
 npx prisma db pull (Use when database already has tables and want to generate prisma models from them)
 npx prisma studio (To check database)
+npx prisma migrate dev --name delete-model (To delete table or model. "prisma migrate dev" will use "schema.prisma" and create "sql migration" with changes and then apply to the database. It also auto generate prisma client)
+npx prisma migrate reset (Reset everything)
 
 <!-- Else -->
 

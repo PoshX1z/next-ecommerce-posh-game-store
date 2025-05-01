@@ -5,8 +5,8 @@ import { APP_DESCRIPTION, APP_NAME } from "@/lib/constants";
 import Footer from "@/components/shared/Footer";
 import HeaderTop from "@/components/shared/header/HeaderTop";
 import { getServerSession } from "next-auth";
-import SessionWrapper from "@/components/shared/SessionWrapper";
 import { authOptions } from "@/auth";
+import SessionWrapper from "@/components/shared/SessionWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

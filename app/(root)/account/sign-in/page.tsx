@@ -1,8 +1,9 @@
-import SignInMenu from "./SignInMenu";
+import SignInForm from "./SignInForm";
+
 export default function SignInPage() {
   return (
     <div>
-      <SignInMenu />
+      <SignInForm />
     </div>
   );
 }
