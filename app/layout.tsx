@@ -7,7 +7,7 @@ import HeaderTop from "@/components/shared/header/HeaderTop";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/auth";
 import SessionWrapper from "@/components/shared/SessionWrapper";
-
+import { Toaster } from "sonner";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -39,7 +39,10 @@ export default async function RootLayout({
           <div className="hidden md:block">
             <HeaderTop />
           </div>
-          <div className="max-w-7xl mx-auto">{children}</div>
+          <div className="max-w-7xl mx-auto">
+            {children}
+            <Toaster position="bottom-right" richColors />
+          </div>
           <div>
             <Footer />
           </div>

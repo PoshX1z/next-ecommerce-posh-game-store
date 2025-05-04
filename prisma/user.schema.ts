@@ -2,13 +2,13 @@
 
 import { z } from "zod";
 
-export const RegisterUserSchema = z
+export const SignUpUserSchema = z
   .object({
-    name: z.string().min(2, "Name must be at least 2 characters"),
+    name: z.string().min(4, "Name must be at least 4 characters"),
     email: z.string().email("Invalid email address"),
     password: z
       .string()
-      .min(6, "Password must be at least 6 characters")
+      .min(8, "Password must be at least 8 characters")
       .max(100, "Password must be less than 100 characters"),
     confirmPassword: z.string(),
   })
@@ -17,7 +17,7 @@ export const RegisterUserSchema = z
     message: "Passwords do not match",
   });
 
-export const LoginUserSchema = z.object({
+export const SignInUserSchema = z.object({
   email: z.string().email("Invalid email address"),
   password: z.string().min(8, "Password is required"),
 });

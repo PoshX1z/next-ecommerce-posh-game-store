@@ -1,10 +1,21 @@
+"use client";
+import { useCartStore } from "@/hooks/useCartStore";
 import { IProductInput } from "@/types";
 import { Heart, ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { toast } from "sonner";
 
 const ProductCard = ({ product }: { product: IProductInput }) => {
+  const addToCart = useCartStore((state) => state.addToCart);
+
+  const handleAddToCart = () => {
+    addToCart(product);
+    toast.success(`${product.name} added to cart successfully`, {
+      description: "View it in your cart or continue shopping",
+    });
+  };
   return (
     <li className="list-none w-[118px] h-80 sm:w-48 sm:h-64 md:w-52 md:h-80 lg:w-60 lg:h-[480px] rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 bg-gradient-to-br from-sky-950 to-sky-900 border border-sky-700 pb-1">
       <div className="relative w-full h-40 lg:h-80">
@@ -43,7 +54,10 @@ const ProductCard = ({ product }: { product: IProductInput }) => {
             <Heart className="text-white w-5 h-5" />
           </button>
 
-          <button className="flex items-center justify-center w-10 h-10 rounded-full bg-green-400 hover:bg-green-500 transition-colors cursor-pointer">
+          <button
+            className="flex items-center justify-center w-10 h-10 rounded-full bg-green-400 hover:bg-green-500 transition-colors cursor-pointer"
+            onClick={handleAddToCart}
+          >
             <ShoppingCart className="text-white w-5 h-5" />
           </button>
         </div>

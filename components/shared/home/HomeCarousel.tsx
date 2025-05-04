@@ -43,7 +43,7 @@ const HomeCarousal = ({
                   priority
                   className="object-cover"
                 />
-                <h1 className="absolute bottom-8 right-8 z-10 px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-3 lg:px-8 lg:py-5 text-white text-base sm:text-xl md:text-2xl lg:text-3xl font-semibold bg-gradient-to-r from-blue-600 to-purple-600 rounded-full shadow-lg backdrop-blur-sm hover:scale-105 transition-transform duration-300">
+                <h1 className="absolute bottom-8 right-8 z-10 px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-3 lg:px-8 lg:py-5 text-white text-sm sm:text-lg md:text-xl lg:text-2xl font-semibold bg-gradient-to-r from-blue-600 to-purple-600 rounded-full shadow-lg backdrop-blur-sm hover:scale-105 transition-transform duration-300">
                   {item.buttonCaption}
                 </h1>
               </div>
