@@ -1,6 +1,6 @@
 "use client";
 import { useCartStore } from "@/hooks/useCartStore";
-import { X } from "lucide-react";
+import { Trash2, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -10,7 +10,7 @@ const CartSidebar = ({ onClose }: { onClose: () => void }) => {
 
   const increaseCartQuantity = useCartStore((state) => state.increaseQuantity);
   const decreaseCartQuantity = useCartStore((state) => state.decreaseQuantity);
-
+  const removeFromCart = useCartStore((state) => state.removeFromCart);
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
   const totalPrice = cart.reduce(
     (sum, item) => sum + item.price * item.quantity,
@@ -58,7 +58,7 @@ const CartSidebar = ({ onClose }: { onClose: () => void }) => {
                   {item.name}
                 </p>
 
-                <div className="flex items-center gap-2 w-1/3">
+                <div className="flex items-center gap-2 max-w-1/2">
                   <button
                     className="bg-amber-900 text-white w-6 h-6 rounded hover:bg-amber-800"
                     onClick={() => decreaseCartQuantity(item.slug)}
@@ -71,6 +71,12 @@ const CartSidebar = ({ onClose }: { onClose: () => void }) => {
                     onClick={() => increaseCartQuantity(item.slug)}
                   >
                     +
+                  </button>
+                  <button
+                    className="hover:text-red-500 transition ease-in-out"
+                    onClick={() => removeFromCart(item.slug)}
+                  >
+                    <Trash2 />
                   </button>
                 </div>
 

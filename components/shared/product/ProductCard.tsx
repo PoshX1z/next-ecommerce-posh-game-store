@@ -2,10 +2,10 @@
 import { useCartStore } from "@/hooks/useCartStore";
 import { useWishListStore } from "@/hooks/useWishListStore";
 import { IProductInput } from "@/types";
-import { Heart, ShoppingCart } from "lucide-react";
+import { Heart, HeartOff, ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { toast } from "sonner";
 
 const ProductCard = ({ product }: { product: IProductInput }) => {
@@ -16,13 +16,21 @@ const ProductCard = ({ product }: { product: IProductInput }) => {
     (state) => state.removeFromWishlist
   );
   const isInWishlist = useWishListStore((state) => state.isInWishlist);
+  const [isWishlisted, setIsWishlist] = useState(false);
+
+  useEffect(() => {
+    setIsWishlist(isInWishlist(product.slug));
+  }, [product.slug, isInWishlist]);
 
   const handleWishlist = () => {
     if (isInWishlist(product.slug)) {
       removeFromWishlist(product.slug);
+      setIsWishlist(false);
       toast.info(`${product.name} removed from wishlist`);
     } else {
       addToWishlist(product);
+      setIsWishlist(true);
+
       toast.success(`${product.name} added to wishlist`);
     }
   };
@@ -71,7 +79,11 @@ const ProductCard = ({ product }: { product: IProductInput }) => {
             className="flex items-center justify-center w-10 h-10 rounded-full bg-red-400 hover:bg-red-500 transition-colors cursor-pointer"
             onClick={handleWishlist}
           >
-            <Heart className="text-white w-5 h-5" />
+            {isWishlisted ? (
+              <HeartOff className="text-white w-5 h-5" />
+            ) : (
+              <Heart className="text-white w-5 h-5" />
+            )}
           </button>
 
           <button

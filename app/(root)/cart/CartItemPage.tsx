@@ -1,5 +1,6 @@
 "use client";
 import { useCartStore } from "@/hooks/useCartStore";
+import { Trash2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,7 +9,7 @@ const CartItemPage = () => {
 
   const increaseCartQuantity = useCartStore((state) => state.increaseQuantity);
   const decreaseCartQuantity = useCartStore((state) => state.decreaseQuantity);
-
+  const removeFromCart = useCartStore((state) => state.removeFromCart);
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
   const totalPrice = cart.reduce(
     (sum, item) => sum + item.price * item.quantity,
@@ -33,7 +34,13 @@ const CartItemPage = () => {
           <div className="flex flex-col gap-5 flex-3">
             {cart.map((item) => (
               <div className="space-y-6" key={item.slug}>
-                <div className="flex gap-4 bg-sky-700 p-5 rounded-xl shadow-lg">
+                <div className="flex relative gap-4 bg-sky-700 p-5 rounded-xl shadow-lg">
+                  <button
+                    className="absolute top-5 right-5 hover:text-red-500 transition ease-in-out"
+                    onClick={() => removeFromCart(item.slug)}
+                  >
+                    <Trash2 />
+                  </button>
                   <div className="relative w-20 h-28 md:w-32  md:h-44 flex-shrink-0 rounded overflow-hidden">
                     <Image
                       src={item.image}
