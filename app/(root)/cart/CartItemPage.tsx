@@ -16,10 +16,6 @@ const CartItemPage = () => {
   );
   return (
     <div className="min-h-screen bg-[#003366] px-3 py-5 md:px-6 md:py-10 text-white">
-      <h1 className="text-3xl md:text-4xl font-bold mb-5 text-center">
-        🛒 MY CART
-      </h1>
-
       <div className="flex flex-col md:flex-row justify-between gap-5 md:gap-10">
         {cart.length === 0 ? (
           <div className="flex flex-col justify-center items-center mx-auto gap-2">
@@ -97,9 +93,11 @@ const CartItemPage = () => {
               </span>
             </div>
             <div className="flex flex-col gap-4 pt-2">
-              <button className="w-full py-3 bg-green-500 text-white font-bold rounded-lg hover:bg-green-600 transition">
-                PROCEED TO CHECKOUT
-              </button>
+              <Link href="/checkout">
+                <button className="w-full py-3 bg-green-500 text-white font-bold rounded-lg hover:bg-green-600 transition">
+                  PROCEED TO CHECKOUT
+                </button>
+              </Link>
             </div>
           </div>
         ) : (

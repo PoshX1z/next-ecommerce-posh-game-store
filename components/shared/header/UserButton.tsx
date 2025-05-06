@@ -20,13 +20,14 @@ const UserButton = () => {
         {/* Trigger Button */}
         {session ? (
           <DropdownMenuTrigger>
-            <Image
-              src="/images/utils/user-profile-01.png"
-              alt="User Avatar"
-              width={40}
-              height={40}
-              className="rounded-full border-2 border-purple-500 hover:shadow-lg transition duration-200"
-            />
+            <div className="relative w-8 h-8 md:w-10 md:h-10">
+              <Image
+                src="/images/utils/user-profile-01.png"
+                alt="User Avatar"
+                fill
+                className="rounded-full border-2 border-purple-500 hover:shadow-lg transition duration-200"
+              />
+            </div>
           </DropdownMenuTrigger>
         ) : (
           <DropdownMenuTrigger className="flex items-center gap-2 rounded-full border border-purple-300 p-2 hover:shadow-lg bg-purple-600 hover:bg-purple-700 transition duration-200">
@@ -35,7 +36,7 @@ const UserButton = () => {
         )}
 
         {/* Menu Content */}
-        <DropdownMenuContent className="w-64 p-3 shadow-2xl rounded-xl bg-purple-600 border border-purple-500 space-y-1">
+        <DropdownMenuContent className="w-40 sm:w-48 md:w-56 lg:w-64 p-3 shadow-2xl rounded-xl bg-purple-600 border border-purple-500 space-y-1">
           {session ? (
             <DropdownMenuGroup>
               <DropdownMenuItem className="rounded-md px-3 py-2 transition">

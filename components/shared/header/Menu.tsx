@@ -12,22 +12,28 @@ const Menu = () => {
     return setIsCartOpened(!isCartOpened);
   };
   return (
-    <div className="flex gap-10 items-center justify-end p-2">
+    <div className="flex gap-5 md:gap-10 items-center justify-end p-2">
       {/* Favourite Icon */}
       <div>
-        <Link href="/favorite">
-          <Heart />
+        <Link
+          href="/wishlist"
+          className="cursor-pointer hover:text-red-400 active:scale-95 transition duration-150 ease-in-out"
+        >
+          <Heart className="w-5 h-5 md:w-7 md:h-7" />
         </Link>
       </div>
       {/* User profile Icon */}
 
-      <div>
+      <div className="hover:brightness-125 active:scale-95 transition duration-150 ease-in-out">
         <UserButton />
       </div>
       {/* Cart Icon */}
 
-      <div onClick={handleClick} className="hover:brightness-70">
-        <ShoppingCartIcon />
+      <div
+        onClick={handleClick}
+        className="cursor-pointer hover:text-sky-500 active:scale-95 transition duration-150 ease-in-out"
+      >
+        <ShoppingCartIcon className="w-5 h-5 md:w-7 md:h-7" />
       </div>
 
       {isCartOpened && (
