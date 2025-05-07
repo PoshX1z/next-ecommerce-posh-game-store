@@ -36,7 +36,7 @@ const CartItemPage = () => {
               <div className="space-y-6" key={item.slug}>
                 <div className="flex relative gap-4 bg-sky-700 p-5 rounded-xl shadow-lg">
                   <button
-                    className="absolute top-5 right-5 hover:text-red-500 transition ease-in-out"
+                    className="hidden md:block absolute top-5 right-5 hover:text-red-500 transition ease-in-out"
                     onClick={() => removeFromCart(item.slug)}
                   >
                     <Trash2 />
@@ -51,9 +51,11 @@ const CartItemPage = () => {
                   </div>
                   <div className="flex flex-col justify-between flex-1 space-y-3">
                     <div>
-                      <p className="text-base md:text-xl font-semibold line-clamp-1">
-                        {item.name}
-                      </p>
+                      <Link href={item.slug}>
+                        <p className="text-base md:text-xl font-semibold line-clamp-1">
+                          {item.name}
+                        </p>
+                      </Link>
                       <p className="text-yellow-300 font-bold text-base md:text-xl">
                         ฿{item.price.toLocaleString()}
                       </p>
@@ -72,6 +74,12 @@ const CartItemPage = () => {
                         onClick={() => increaseCartQuantity(item.slug)}
                       >
                         +
+                      </button>
+                      <button
+                        className="block md:hidden hover:text-red-500 transition ease-in-out"
+                        onClick={() => removeFromCart(item.slug)}
+                      >
+                        <Trash2 />
                       </button>
                     </div>
                   </div>
