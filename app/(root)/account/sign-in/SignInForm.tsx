@@ -45,7 +45,7 @@ const SignInForm = () => {
         className="bg-gradient-to-br from-blue-800 via-sky-700 to-sky-600 border border-sky-300/40 rounded-2xl shadow-2xl p-10 w-full max-w-xl text-white space-y-8"
       >
         <h1 className="text-3xl font-extrabold text-center text-white">
-          Sign In
+          SIGN IN
         </h1>
 
         {error && <p className="text-red-400 text-sm text-center">{error}</p>}
@@ -97,7 +97,7 @@ const SignInForm = () => {
           <h2 className="font-semibold text-white text-lg md:text-xl lg:text-2xl bg-red-500 p-2">
             OR
           </h2>
-          <p className="text-gray-200 text-base pt-5 underline">Sign in with</p>
+          <p className="text-gray-200 text-base pt-5 underline">SIGN IN WITH</p>
         </div>
 
         <div className="flex justify-center gap-6">
@@ -128,12 +128,12 @@ const SignInForm = () => {
         </div>
 
         <div className="text-center text-sm text-white">
-          <p className="text-lg">New here?</p>
+          <p className="text-lg">NEW HERE?</p>
           <Link
             href="/account/sign-up"
             className="text-yellow-300 hover:underline font-medium text-lg"
           >
-            Create an account
+            CREATE AN ACCOUNT
           </Link>
         </div>
       </form>

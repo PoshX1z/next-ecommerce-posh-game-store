@@ -41,18 +41,18 @@ const UserButton = () => {
             <DropdownMenuGroup>
               <DropdownMenuItem className="rounded-md px-3 py-2 transition">
                 <Link
-                  href="/account"
+                  href="/account/manage"
                   className="w-full text-base font-bold text-pink-200 hover:text-black"
                 >
-                  My Account
+                  MY ACCOUNT
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem className=" rounded-md px-3 py-2 transition">
                 <Link
-                  href="/account/orders"
+                  href="/account/order"
                   className="w-full text-base font-bold text-indigo-200 hover:text-black"
                 >
-                  My Orders
+                  MY ORDERS
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="rounded-md px-3 py-2 transition">
@@ -60,7 +60,7 @@ const UserButton = () => {
                   href="/account/wishlist"
                   className="w-full text-base font-bold text-purple-100 hover:text-black"
                 >
-                  My Wishlist
+                  MY WISHLIST
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="rounded-md px-3 py-2 transition">
@@ -68,7 +68,7 @@ const UserButton = () => {
                   onClick={() => signOut({ callbackUrl: "/" })}
                   className="w-full text-left text-base font-bold text-red-300 hover:text-black"
                 >
-                  Sign Out
+                  SIGN OUT
                 </button>
               </DropdownMenuItem>
             </DropdownMenuGroup>
@@ -88,7 +88,7 @@ const UserButton = () => {
                   href="/account/sign-up"
                   className="text-pink-300 underline hover:text-white "
                 >
-                  Sign up
+                  SIGN UP
                 </Link>
               </DropdownMenuLabel>
             </DropdownMenuGroup>

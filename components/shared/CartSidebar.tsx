@@ -18,8 +18,8 @@ const CartSidebar = ({ onClose }: { onClose: () => void }) => {
   );
   return (
     <div className="fixed z-[999] top-0 right-0 h-screen w-full max-w-md bg-purple-950 shadow-2xl flex flex-col animate-slideInRight">
-      <div className="px-8 py-5 border-b border-amber-900 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-white">🛒 My Cart</h1>
+      <div className="px-8 py-5 border-b border-white flex justify-between items-center">
+        <h1 className="text-2xl font-bold text-white">🛒 MY CART</h1>
         <X
           onClick={onClose}
           className="text-white hover:text-red-500 transition"
@@ -29,13 +29,13 @@ const CartSidebar = ({ onClose }: { onClose: () => void }) => {
       {cart.length === 0 ? (
         <div className="flex flex-col justify-center items-center mx-auto gap-2 pt-5">
           <p className="text-xl md:text-2xl font-bold text-red-500">
-            There is no item in your cart
+            THERE IS NO ITEM IN CART
           </p>
           <Link
             href="/pc"
             className="underline text-xl md:text-2xl text-yellow-300"
           >
-            Buy Something
+            BUY SOMETHING
           </Link>
         </div>
       ) : (
