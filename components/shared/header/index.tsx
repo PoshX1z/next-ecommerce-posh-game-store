@@ -5,12 +5,8 @@ import Link from "next/link";
 import SearchBar from "./SearchBar";
 import Menu from "./Menu";
 import data from "@/lib/data";
-import useDeviceType from "@/hooks/useDeviceType";
 
 const Header = () => {
-  const deviceType = useDeviceType();
-  const displayMenuItems =
-    deviceType === "mobile" ? 4 : data.headerMenus.length;
   return (
     <div>
       {/* Header Content */}
@@ -34,9 +30,22 @@ const Header = () => {
         <SearchBar />
       </div>
 
-      {/* Header menu button */}
-      <div className="flex flex-row gap-2 sm:gap-4 md:gap-6 lg:gap-10 items-center justify-center p-2 font-bold text-xs sm:text-sm md:text-base lg:text-lg">
-        {data.headerMenus.slice(0, displayMenuItems).map((menu) => (
+      {/* Mobile Scrollable Navbar */}
+      <div className="flex sm:hidden overflow-x-auto whitespace-nowrap no-scrollbar gap-2 px-2 py-2">
+        {data.headerMenus.map((menu) => (
+          <Link
+            key={menu.href}
+            href={menu.href}
+            className="inline-block px-3 py-2 text-xs font-bold rounded-md hover:bg-blue-500 hover:text-white transition duration-200 ease-in-out"
+          >
+            {menu.name}
+          </Link>
+        ))}
+      </div>
+
+      {/* Desktop Navbar */}
+      <div className="hidden sm:flex flex-row gap-2 sm:gap-4 md:gap-6 lg:gap-10 items-center justify-center p-2 font-bold text-xs sm:text-sm md:text-base lg:text-lg">
+        {data.headerMenus.map((menu) => (
           <Link
             key={menu.href}
             href={menu.href}

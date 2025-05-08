@@ -7,7 +7,7 @@ const products: IProductInput[] = [
   {
     name: "A Plague Tale Innocent (Steam)",
     slug: toSlug("A Plague Tale Innocent (Steam)"),
-    image: "/images/games/A Plague Tale Innocent.png",
+    image: "/images/games/A Plague Tale Innocent.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Standard",
@@ -25,7 +25,7 @@ const products: IProductInput[] = [
   {
     name: "A Plague Tale Innocent (Playstation)",
     slug: toSlug("A Plague Tale Innocent (Playstation)"),
-    image: "/images/games/A Plague Tale Innocent.png",
+    image: "/images/games/A Plague Tale Innocent.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Standard",
@@ -46,7 +46,7 @@ const products: IProductInput[] = [
   {
     name: "A Plague Tale Requiem (Epic Game)",
     slug: toSlug("A Plague Tale Requiem (Epic Game)"),
-    image: "/images/games/A Plague Tale Requiem.png",
+    image: "/images/games/A Plague Tale Requiem.jpg",
     platform: "Epic Game",
     platformImageIcon: "/images/icons/epic-icon.png",
     edition: "Standard",
@@ -66,7 +66,7 @@ const products: IProductInput[] = [
   {
     name: "Assassin's Creed Odyssey (Steam)",
     slug: toSlug("Assassin's Creed Odyssey (Steam)"),
-    image: "/images/games/Assassin's Creed Odyssey.png",
+    image: "/images/games/Assassin's Creed Odyssey.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Standard",
@@ -84,7 +84,7 @@ const products: IProductInput[] = [
   {
     name: "Assassin's Creed Odyssey (Ubisoft)",
     slug: toSlug("Assassin's Creed Odyssey (Ubisoft)"),
-    image: "/images/games/Assassin's Creed Odyssey.png",
+    image: "/images/games/Assassin's Creed Odyssey.jpg",
     platform: "Ubisoft",
     platformImageIcon: "/images/icons/ubisoft-icon.png",
     edition: "Deluxe",
@@ -103,7 +103,7 @@ const products: IProductInput[] = [
   {
     name: "Assassin's Creed Odyssey (Playstation)",
     slug: toSlug("Assassin's Creed Odyssey (Playstation)"),
-    image: "/images/games/Assassin's Creed Odyssey.png",
+    image: "/images/games/Assassin's Creed Odyssey.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Ultimate",
@@ -123,7 +123,7 @@ const products: IProductInput[] = [
   {
     name: "Assassin's Creed Valhalla (Steam)",
     slug: toSlug("Assassin's Creed Valhalla (Steam)"),
-    image: "/images/games/Assassin's Creed Valhalla.png",
+    image: "/images/games/Assassin's Creed Valhalla.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Deluxe",
@@ -141,7 +141,7 @@ const products: IProductInput[] = [
   {
     name: "Assassin's Creed Valhalla (Playstation)",
     slug: toSlug("Assassin's Creed Valhalla (Playstation)"),
-    image: "/images/games/Assassin's Creed Valhalla.png",
+    image: "/images/games/Assassin's Creed Valhalla.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Deluxe",
@@ -162,7 +162,7 @@ const products: IProductInput[] = [
   {
     name: "Ark Survival (Steam)",
     slug: toSlug("Ark Survival (Steam)"),
-    image: "/images/games/Ark Survival.png",
+    image: "/images/games/Ark Survival.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Survival Evolved",
@@ -180,7 +180,7 @@ const products: IProductInput[] = [
   {
     name: "Ark Survival (Xbox)",
     slug: toSlug("Ark Survival (Xbox)"),
-    image: "/images/games/Ark Survival.png",
+    image: "/images/games/Ark Survival.jpg",
     platform: "Xbox",
     platformImageIcon: "/images/icons/xbox-icon.png",
     edition: "Survival Evolved",
@@ -199,7 +199,7 @@ const products: IProductInput[] = [
   {
     name: "Battlefield V (EA)",
     slug: toSlug("Battlefield V (EA)"),
-    image: "/images/games/Battlefield V.png",
+    image: "/images/games/Battlefield V.jpg",
     platform: "EA",
     platformImageIcon: "/images/icons/ea-icon.png",
     edition: "Standard",
@@ -217,7 +217,7 @@ const products: IProductInput[] = [
   {
     name: "Battlefield V (Steam)",
     slug: toSlug("Battlefield V (Steam)"),
-    image: "/images/games/Battlefield V.png",
+    image: "/images/games/Battlefield V.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Standard",
@@ -236,7 +236,7 @@ const products: IProductInput[] = [
   {
     name: "Black Myth Wukong (Steam)",
     slug: toSlug("Black Myth Wukong (Steam)"),
-    image: "/images/games/Black Myth Wukong.png",
+    image: "/images/games/Black Myth Wukong.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Standard",
@@ -254,7 +254,7 @@ const products: IProductInput[] = [
   {
     name: "Black Myth Wukong (Playstation)",
     slug: toSlug("Black Myth Wukong (Playstation)"),
-    image: "/images/games/Black Myth Wukong.png",
+    image: "/images/games/Black Myth Wukong.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Standard",
@@ -275,7 +275,7 @@ const products: IProductInput[] = [
   {
     name: "Call Of Duty Black Ops 6 (Microsoft)",
     slug: toSlug("Call Of Duty Black Ops 6 (Microsoft)"),
-    image: "/images/games/Call Of Duty Black Ops 6.png",
+    image: "/images/games/Call Of Duty Black Ops 6.jpg",
     platform: "Microsoft",
     platformImageIcon: "/images/icons/microsoft-icon.png",
     edition: "Standard",
@@ -294,7 +294,7 @@ const products: IProductInput[] = [
   {
     name: "Call Of Duty Black Ops 6 (Playstation)",
     slug: toSlug("Call Of Duty Black Ops 6 (Playstation)"),
-    image: "/images/games/Call Of Duty Black Ops 6.png",
+    image: "/images/games/Call Of Duty Black Ops 6.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Standard",
@@ -353,7 +353,7 @@ const products: IProductInput[] = [
   {
     name: "Callisto Protocol (Epic Game)",
     slug: toSlug("Callisto Protocol (Epic Game)"),
-    image: "/images/games/Callisto Protocol.png",
+    image: "/images/games/Callisto Protocol.jpg",
     platform: "Epic Game",
     platformImageIcon: "/images/icons/epic-icon.png",
     edition: "Day One",
@@ -371,7 +371,7 @@ const products: IProductInput[] = [
   {
     name: "Callisto Protocol (Playstation)",
     slug: toSlug("Callisto Protocol (Playstation)"),
-    image: "/images/games/Callisto Protocol.png",
+    image: "/images/games/Callisto Protocol.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Day One",
@@ -392,7 +392,7 @@ const products: IProductInput[] = [
   {
     name: "Control (Epic Game)",
     slug: toSlug("Control (Epic Game)"),
-    image: "/images/games/Control.png",
+    image: "/images/games/Control.jpg",
     platform: "Epic Game",
     platformImageIcon: "/images/icons/epic-icon.png",
     edition: "Ultimate",
@@ -410,7 +410,7 @@ const products: IProductInput[] = [
   {
     name: "Control (Playstation)",
     slug: toSlug("Control (Playstation)"),
-    image: "/images/games/Control.png",
+    image: "/images/games/Control.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Ultimate",
@@ -430,7 +430,7 @@ const products: IProductInput[] = [
   {
     name: "Cyberpunk 2077 (Steam)",
     slug: toSlug("Cyberpunk 2077 (Steam)"),
-    image: "/images/games/Cyberpunk 2077.png",
+    image: "/images/games/Cyberpunk 2077.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Phantom Liberty Bundle",
@@ -450,7 +450,7 @@ const products: IProductInput[] = [
   {
     name: "Cyberpunk 2077 (Playstation)",
     slug: toSlug("Cyberpunk 2077 (Playstation)"),
-    image: "/images/games/Cyberpunk 2077.png",
+    image: "/images/games/Cyberpunk 2077.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Phantom Liberty Bundle",
@@ -468,7 +468,7 @@ const products: IProductInput[] = [
   {
     name: "Cyberpunk 2077 (Xbox)",
     slug: toSlug("Cyberpunk 2077 (Xbox)"),
-    image: "/images/games/Cyberpunk 2077.png",
+    image: "/images/games/Cyberpunk 2077.jpg",
     platform: "Xbox",
     platformImageIcon: "/images/icons/xbox-icon.png",
     edition: "Phantom Liberty Bundle",
@@ -487,7 +487,7 @@ const products: IProductInput[] = [
   {
     name: "Death Stranding (Steam)",
     slug: toSlug("Death Stranding (Steam)"),
-    image: "/images/games/Death Stranding.png",
+    image: "/images/games/Death Stranding.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Director's Cut",
@@ -505,7 +505,7 @@ const products: IProductInput[] = [
   {
     name: "Death Stranding (Playstation)",
     slug: toSlug("Death Stranding (Playstation)"),
-    image: "/images/games/Death Stranding.png",
+    image: "/images/games/Death Stranding.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Director's Cut",
@@ -524,7 +524,7 @@ const products: IProductInput[] = [
   {
     name: "Death Stranding (Epic Game)",
     slug: toSlug("Death Stranding (Epic Game)"),
-    image: "/images/games/Death Stranding.png",
+    image: "/images/games/Death Stranding.jpg",
     platform: "Epic Game",
     platformImageIcon: "/images/icons/epic-icon.png",
     edition: "Director's Cut",
@@ -544,7 +544,7 @@ const products: IProductInput[] = [
   {
     name: "Devil May Cry 5 (Steam)",
     slug: toSlug("Devil May Cry 5 (Steam)"),
-    image: "/images/games/Devil May Cry 5.png",
+    image: "/images/games/Devil May Cry 5.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Special",
@@ -562,7 +562,7 @@ const products: IProductInput[] = [
   {
     name: "Devil May Cry 5 (Playstation)",
     slug: toSlug("Devil May Cry 5 (Playstation)"),
-    image: "/images/games/Devil May Cry 5.png",
+    image: "/images/games/Devil May Cry 5.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Special",
@@ -580,7 +580,7 @@ const products: IProductInput[] = [
   {
     name: "Devil May Cry 5 (Xbox)",
     slug: toSlug("Devil May Cry 5 (Xbox)"),
-    image: "/images/games/Devil May Cry 5.png",
+    image: "/images/games/Devil May Cry 5.jpg",
     platform: "Xbox",
     platformImageIcon: "/images/icons/xbox-icon.png",
     edition: "Special",
@@ -600,7 +600,7 @@ const products: IProductInput[] = [
   {
     name: "Doom Eternal (Steam)",
     slug: toSlug("Doom Eternal (Steam)"),
-    image: "/images/games/Doom Eternal.png",
+    image: "/images/games/Doom Eternal.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Deluxe",
@@ -618,7 +618,7 @@ const products: IProductInput[] = [
   {
     name: "Doom Eternal (Microsoft)",
     slug: toSlug("Doom Eternal (Microsoft)"),
-    image: "/images/games/Doom Eternal.png",
+    image: "/images/games/Doom Eternal.jpg",
     platform: "Microsoft",
     platformImageIcon: "/images/icons/microsoft-icon.png",
     edition: "Deluxe",
@@ -636,7 +636,7 @@ const products: IProductInput[] = [
   {
     name: "Doom Eternal (Playstation)",
     slug: toSlug("Doom Eternal (Playstation)"),
-    image: "/images/games/Doom Eternal.png",
+    image: "/images/games/Doom Eternal.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Deluxe",
@@ -656,7 +656,7 @@ const products: IProductInput[] = [
   {
     name: "Dragon Age Inquisition (EA)",
     slug: toSlug("Dragon Age Inquisition (EA)"),
-    image: "/images/games/Dragon Age Inquisition.png",
+    image: "/images/games/Dragon Age Inquisition.jpg",
     platform: "EA",
     platformImageIcon: "/images/icons/ea-icon.png",
     edition: "Game of the Year",
@@ -674,7 +674,7 @@ const products: IProductInput[] = [
   {
     name: "Dragon Age Inquisition (Playstation)",
     slug: toSlug("Dragon Age Inquisition (Playstation)"),
-    image: "/images/games/Dragon Age Inquisition.png",
+    image: "/images/games/Dragon Age Inquisition.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Game of the Year",
@@ -694,7 +694,7 @@ const products: IProductInput[] = [
   {
     name: "Dragon Ball Z Kakarot (Steam)",
     slug: toSlug("Dragon Ball Z Kakarot (Steam)"),
-    image: "/images/games/Dragon Ball Z Kakarot.png",
+    image: "/images/games/Dragon Ball Z Kakarot.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Legendary",
@@ -712,7 +712,7 @@ const products: IProductInput[] = [
   {
     name: "Dragon Ball Z Kakarot (Playstation)",
     slug: toSlug("Dragon Ball Z Kakarot (Playstation)"),
-    image: "/images/games/Dragon Ball Z Kakarot.png",
+    image: "/images/games/Dragon Ball Z Kakarot.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Legendary",
@@ -730,7 +730,7 @@ const products: IProductInput[] = [
   {
     name: "Dragon Ball Z Kakarot (Nintendo)",
     slug: toSlug("Dragon Ball Z Kakarot (Nintendo)"),
-    image: "/images/games/Dragon Ball Z Kakarot.png",
+    image: "/images/games/Dragon Ball Z Kakarot.jpg",
     platform: "Nintendo",
     platformImageIcon: "/images/icons/nintendo-icon.png",
     edition: "Legendary",
@@ -749,7 +749,7 @@ const products: IProductInput[] = [
   {
     name: "Elden Ring (Steam)",
     slug: toSlug("Elden Ring (Steam)"),
-    image: "/images/games/Elden Ring.png",
+    image: "/images/games/Elden Ring.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Standard",
@@ -767,7 +767,7 @@ const products: IProductInput[] = [
   {
     name: "Elden Ring (Playstation)",
     slug: toSlug("Elden Ring (Playstation)"),
-    image: "/images/games/Elden Ring.png",
+    image: "/images/games/Elden Ring.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Standard",
@@ -808,7 +808,7 @@ const products: IProductInput[] = [
   {
     name: "Far Cry 5 (Ubisoft)",
     slug: toSlug("Far Cry 5 (Ubisoft)"),
-    image: "/images/games/Far Cry 5.png",
+    image: "/images/games/Far Cry 5.jpg",
     platform: "Ubisoft",
     platformImageIcon: "/images/icons/ubisoft-icon.png",
     edition: "Gold",
@@ -826,7 +826,7 @@ const products: IProductInput[] = [
   {
     name: "Far Cry 5 (Steam)",
     slug: toSlug("Far Cry 5 (Steam)"),
-    image: "/images/games/Far Cry 5.png",
+    image: "/images/games/Far Cry 5.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Gold",
@@ -846,7 +846,7 @@ const products: IProductInput[] = [
   {
     name: "Far Cry 6 (Ubisoft)",
     slug: toSlug("Far Cry 6 (Ubisoft)"),
-    image: "/images/games/Far Cry 6.png",
+    image: "/images/games/Far Cry 6.jpg",
     platform: "Ubisoft",
     platformImageIcon: "/images/icons/ubisoft-icon.png",
     edition: "Standard",
@@ -866,7 +866,7 @@ const products: IProductInput[] = [
   {
     name: "Final Fantasy Origin Stranger Of Paradise (Playstation)",
     slug: toSlug("Final Fantasy Origin Stranger Of Paradise (Playstation)"),
-    image: "/images/games/Final Fantasy Origin Stranger Of Paradise.png",
+    image: "/images/games/Final Fantasy Origin Stranger Of Paradise.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Standard",
@@ -907,7 +907,7 @@ const products: IProductInput[] = [
   {
     name: "Final Fantasy VII Remake (Steam)",
     slug: toSlug("Final Fantasy VII Remake (Steam)"),
-    image: "/images/games/Final Fantasy VII Remake.png",
+    image: "/images/games/Final Fantasy VII Remake.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Intergrade",
@@ -927,7 +927,7 @@ const products: IProductInput[] = [
   {
     name: "Final Fantasy X HD Remaster (Steam)",
     slug: toSlug("Final Fantasy X HD Remaster (Steam)"),
-    image: "/images/games/Final Fantasy X HD Remaster.png",
+    image: "/images/games/Final Fantasy X HD Remaster.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Standard",
@@ -986,7 +986,7 @@ const products: IProductInput[] = [
   {
     name: "Final Fantasy XVI (Playstation)",
     slug: toSlug("Final Fantasy XVI (Playstation)"),
-    image: "/images/games/Final Fantasy XVI.png",
+    image: "/images/games/Final Fantasy XVI.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Standard",
@@ -1005,7 +1005,7 @@ const products: IProductInput[] = [
   {
     name: "Gears Of War 5 (Xbox)",
     slug: toSlug("Gears Of War 5 (Xbox)"),
-    image: "/images/games/Gears Of War 5.png",
+    image: "/images/games/Gears Of War 5.jpg",
     platform: "Xbox",
     platformImageIcon: "/images/icons/xbox-icon.png",
     edition: "Standard",
@@ -1023,7 +1023,7 @@ const products: IProductInput[] = [
   {
     name: "Gears Of War 5 (Steam)",
     slug: toSlug("Gears Of War 5 (Steam)"),
-    image: "/images/games/Gears Of War 5.png",
+    image: "/images/games/Gears Of War 5.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Standard",
@@ -1043,7 +1043,7 @@ const products: IProductInput[] = [
   {
     name: "Genshin Impact (Playstation)",
     slug: toSlug("Genshin Impact (Playstation)"),
-    image: "/images/games/Genshin Impact.png",
+    image: "/images/games/Genshin Impact.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Starter",
@@ -1064,7 +1064,7 @@ const products: IProductInput[] = [
   {
     name: "Ghost Of Tsushima (Playstation)",
     slug: toSlug("Ghost Of Tsushima (Playstation)"),
-    image: "/images/games/Ghost Of Tsushima.png",
+    image: "/images/games/Ghost Of Tsushima.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Director's Cut",
@@ -1084,7 +1084,7 @@ const products: IProductInput[] = [
   {
     name: "Ghost Recon Wildland (Ubisoft)",
     slug: toSlug("Ghost Recon Wildland (Ubisoft)"),
-    image: "/images/games/Ghost Recon Wildland.png",
+    image: "/images/games/Ghost Recon Wildland.jpg",
     platform: "Ubisoft",
     platformImageIcon: "/images/icons/ubisoft-icon.png",
     edition: "Gold",
@@ -1104,7 +1104,7 @@ const products: IProductInput[] = [
   {
     name: "God Of War Ragnarok (Playstation)",
     slug: toSlug("God Of War Ragnarok (Playstation)"),
-    image: "/images/games/God Of War Ragnarok.png",
+    image: "/images/games/God Of War Ragnarok.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Standard",
@@ -1125,7 +1125,7 @@ const products: IProductInput[] = [
   {
     name: "God Of War (Steam)",
     slug: toSlug("God Of War (Steam)"),
-    image: "/images/games/God Of War.png",
+    image: "/images/games/God Of War.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Standard",
@@ -1146,7 +1146,7 @@ const products: IProductInput[] = [
   {
     name: "Godfall (Epic Game)",
     slug: toSlug("Godfall (Epic Game)"),
-    image: "/images/games/Godfall.png",
+    image: "/images/games/Godfall.jpg",
     platform: "Epic Game",
     platformImageIcon: "/images/icons/epic-icon.png",
     edition: "Deluxe",
@@ -1166,7 +1166,7 @@ const products: IProductInput[] = [
   {
     name: "Grandblue Fantasy Relink (Steam)",
     slug: toSlug("Grandblue Fantasy Relink (Steam)"),
-    image: "/images/games/Grandblue Fantasy Relink.png",
+    image: "/images/games/Grandblue Fantasy Relink.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Standard",
@@ -1185,7 +1185,7 @@ const products: IProductInput[] = [
   {
     name: "Grandblue Fantasy Relink (Playstation)",
     slug: toSlug("Grandblue Fantasy Relink (Playstation)"),
-    image: "/images/games/Grandblue Fantasy Relink.png",
+    image: "/images/games/Grandblue Fantasy Relink.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Deluxe",
@@ -1227,7 +1227,7 @@ const products: IProductInput[] = [
   {
     name: "Guardien Of The Galaxy (Epic Game)",
     slug: toSlug("Guardien Of The Galaxy (Epic Game)"),
-    image: "/images/games/Guardien Of The Galaxy.png",
+    image: "/images/games/Guardien Of The Galaxy.jpg",
     platform: "Epic Game",
     platformImageIcon: "/images/icons/epic-icon.png",
     edition: "Standard",
@@ -1267,7 +1267,7 @@ const products: IProductInput[] = [
   {
     name: "Hitman 3 (Steam)",
     slug: toSlug("Hitman 3 (Steam)"),
-    image: "/images/games/Hitman 3.png",
+    image: "/images/games/Hitman 3.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Deluxe",
@@ -1288,7 +1288,7 @@ const products: IProductInput[] = [
   {
     name: "Hogwarts Legacy (Steam)",
     slug: toSlug("Hogwarts Legacy (Steam)"),
-    image: "/images/games/Hogwarts Legacy.png",
+    image: "/images/games/Hogwarts Legacy.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Standard",
@@ -1309,7 +1309,7 @@ const products: IProductInput[] = [
   {
     name: "Horizon Forbidden West (Playstation)",
     slug: toSlug("Horizon Forbidden West (Playstation)"),
-    image: "/images/games/Horizon Forbidden West.png",
+    image: "/images/games/Horizon Forbidden West.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Standard",
@@ -1329,7 +1329,7 @@ const products: IProductInput[] = [
   {
     name: "Horizon Zero Dawn (Steam)",
     slug: toSlug("Horizon Zero Dawn (Steam)"),
-    image: "/images/games/Horizon Zero Dawn.png",
+    image: "/images/games/Horizon Zero Dawn.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Complete",
@@ -1348,7 +1348,7 @@ const products: IProductInput[] = [
   {
     name: "Just Cause 4 (Steam)",
     slug: toSlug("Just Cause 4 (Steam)"),
-    image: "/images/games/Just Cause 4.png",
+    image: "/images/games/Just Cause 4.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Gold",
@@ -1367,7 +1367,7 @@ const products: IProductInput[] = [
   {
     name: "Lies of P (Steam)",
     slug: toSlug("Lies of P (Steam)"),
-    image: "/images/games/Lies of P.png",
+    image: "/images/games/Lies of P.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Deluxe",
@@ -1387,7 +1387,7 @@ const products: IProductInput[] = [
   {
     name: "Like A Dragon Gaiden (Steam)",
     slug: toSlug("Like A Dragon Gaiden (Steam)"),
-    image: "/images/games/Like A Dragon Gaiden.png",
+    image: "/images/games/Like A Dragon Gaiden.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Standard",
@@ -1406,7 +1406,7 @@ const products: IProductInput[] = [
   {
     name: "Metal Gears Rising Revengence (Steam)",
     slug: toSlug("Metal Gears Rising Revengence (Steam)"),
-    image: "/images/games/Metal Gears Rising Revengence.png",
+    image: "/images/games/Metal Gears Rising Revengence.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Standard",
@@ -1424,7 +1424,7 @@ const products: IProductInput[] = [
   {
     name: "Metal Gears Rising Revengence (Xbox)",
     slug: toSlug("Metal Gears Rising Revengence (Xbox)"),
-    image: "/images/games/Metal Gears Rising Revengence.png",
+    image: "/images/games/Metal Gears Rising Revengence.jpg",
     platform: "Xbox",
     platformImageIcon: "/images/icons/xbox-icon.png",
     edition: "Standard",
@@ -1464,7 +1464,7 @@ const products: IProductInput[] = [
   {
     name: "Mirror Edge Catalyst (Steam)",
     slug: toSlug("Mirror Edge Catalyst (Steam)"),
-    image: "/images/games/Mirror Edge Catalyst.png",
+    image: "/images/games/Mirror Edge Catalyst.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Standard",
@@ -1482,7 +1482,7 @@ const products: IProductInput[] = [
   {
     name: "Mirror Edge Catalyst (EA)",
     slug: toSlug("Mirror Edge Catalyst (EA)"),
-    image: "/images/games/Mirror Edge Catalyst.png",
+    image: "/images/games/Mirror Edge Catalyst.jpg",
     platform: "EA",
     platformImageIcon: "/images/icons/ea-icon.png",
     edition: "Standard",
@@ -1521,7 +1521,7 @@ const products: IProductInput[] = [
   {
     name: "Monster Hunter Rise Sunbreak (Steam)",
     slug: toSlug("Monster Hunter Rise Sunbreak (Steam)"),
-    image: "/images/games/Monster Hunter Rise Sunbreak.png",
+    image: "/images/games/Monster Hunter Rise Sunbreak.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Standard",
@@ -1539,7 +1539,7 @@ const products: IProductInput[] = [
   {
     name: "Monster Hunter Rise Sunbreak (Nintendo)",
     slug: toSlug("Monster Hunter Rise Sunbreak (Nintendo)"),
-    image: "/images/games/Monster Hunter Rise Sunbreak.png",
+    image: "/images/games/Monster Hunter Rise Sunbreak.jpg",
     platform: "Nintendo",
     platformImageIcon: "/images/icons/nintendo-icon.png",
     edition: "Deluxe",
@@ -1558,7 +1558,7 @@ const products: IProductInput[] = [
   {
     name: "Monster Hunter Wilds (Playstation)",
     slug: toSlug("Monster Hunter Wilds (Playstation)"),
-    image: "/images/games/Monster Hunter Wilds.png",
+    image: "/images/games/Monster Hunter Wilds.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Standard",
@@ -1578,7 +1578,7 @@ const products: IProductInput[] = [
   {
     name: "Monster Hunter World Iceborne (Steam)",
     slug: toSlug("Monster Hunter World Iceborne (Steam)"),
-    image: "/images/games/Monster Hunter World Iceborne.png",
+    image: "/images/games/Monster Hunter World Iceborne.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Master",
@@ -1596,7 +1596,7 @@ const products: IProductInput[] = [
   {
     name: "Monster Hunter World Iceborne (Playstation)",
     slug: toSlug("Monster Hunter World Iceborne (Playstation)"),
-    image: "/images/games/Monster Hunter World Iceborne.png",
+    image: "/images/games/Monster Hunter World Iceborne.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Master",
@@ -1616,7 +1616,7 @@ const products: IProductInput[] = [
   {
     name: "NFS Heat (EA)",
     slug: toSlug("NFS Heat (EA)"),
-    image: "/images/games/NFS Heat.png",
+    image: "/images/games/NFS Heat.jpg",
     platform: "EA",
     platformImageIcon: "/images/icons/ea-icon.png",
     edition: "Standard",
@@ -1636,7 +1636,7 @@ const products: IProductInput[] = [
   {
     name: "Nier R Automata (Steam)",
     slug: toSlug("Nier R Automata (Steam)"),
-    image: "/images/games/Nier R Automata.png",
+    image: "/images/games/Nier R Automata.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Game of the YoRHa",
@@ -1654,7 +1654,7 @@ const products: IProductInput[] = [
   {
     name: "Nier R Automata (Playstation)",
     slug: toSlug("Nier R Automata (Playstation)"),
-    image: "/images/games/Nier R Automata.png",
+    image: "/images/games/Nier R Automata.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Game of the YoRHa",
@@ -1674,7 +1674,7 @@ const products: IProductInput[] = [
   {
     name: "Rachet & Clank Rift Apart (Playstation)",
     slug: toSlug("Rachet & Clank Rift Apart (Playstation)"),
-    image: "/images/games/Rachet & Clank Rift Apart.png",
+    image: "/images/games/Rachet & Clank Rift Apart.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Standard",
@@ -1694,7 +1694,7 @@ const products: IProductInput[] = [
   {
     name: "Red Dead Redemtion 2 (Steam)",
     slug: toSlug("Red Dead Redemtion 2 (Steam)"),
-    image: "/images/games/Red Dead Redemtion 2.png",
+    image: "/images/games/Red Dead Redemtion 2.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Ultimate",
@@ -1712,7 +1712,7 @@ const products: IProductInput[] = [
   {
     name: "Red Dead Redemtion 2 (Playstation)",
     slug: toSlug("Red Dead Redemtion 2 (Playstation)"),
-    image: "/images/games/Red Dead Redemtion 2.png",
+    image: "/images/games/Red Dead Redemtion 2.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Ultimate",
@@ -1733,7 +1733,7 @@ const products: IProductInput[] = [
   {
     name: "Remnent 2 (Steam)",
     slug: toSlug("Remnent 2 (Steam)"),
-    image: "/images/games/Remnent 2.png",
+    image: "/images/games/Remnent 2.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Standard",
@@ -1752,7 +1752,7 @@ const products: IProductInput[] = [
   {
     name: "Resident Evil 4 (Steam)",
     slug: toSlug("Resident Evil 4 (Steam)"),
-    image: "/images/games/Resident Evil 4.png",
+    image: "/images/games/Resident Evil 4.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Deluxe",
@@ -1770,7 +1770,7 @@ const products: IProductInput[] = [
   {
     name: "Resident Evil 4 (Playstation)",
     slug: toSlug("Resident Evil 4 (Playstation)"),
-    image: "/images/games/Resident Evil 4.png",
+    image: "/images/games/Resident Evil 4.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Deluxe",
@@ -1790,7 +1790,7 @@ const products: IProductInput[] = [
   {
     name: "Rise Of Tomb Raider (Steam)",
     slug: toSlug("Rise Of Tomb Raider (Steam)"),
-    image: "/images/games/Rise Of Tomb Raider.png",
+    image: "/images/games/Rise Of Tomb Raider.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "20 Year Celebration",
@@ -1829,7 +1829,7 @@ const products: IProductInput[] = [
   {
     name: "Sea Of Stars (Steam)",
     slug: toSlug("Sea Of Stars (Steam)"),
-    image: "/images/games/Sea Of Stars.png",
+    image: "/images/games/Sea Of Stars.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Standard",
@@ -1849,7 +1849,7 @@ const products: IProductInput[] = [
   {
     name: "Sekiro Shadow Die Twice (Steam)",
     slug: toSlug("Sekiro Shadow Die Twice (Steam)"),
-    image: "/images/games/Sekiro Shadow Die Twice.png",
+    image: "/images/games/Sekiro Shadow Die Twice.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Game of the Year",
@@ -1867,7 +1867,7 @@ const products: IProductInput[] = [
   {
     name: "Sekiro Shadow Die Twice (Playstation)",
     slug: toSlug("Sekiro Shadow Die Twice (Playstation)"),
-    image: "/images/games/Sekiro Shadow Die Twice.png",
+    image: "/images/games/Sekiro Shadow Die Twice.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Game of the Year",
@@ -1887,7 +1887,7 @@ const products: IProductInput[] = [
   {
     name: "Shadow Of Tomb Raider (Steam)",
     slug: toSlug("Shadow Of Tomb Raider (Steam)"),
-    image: "/images/games/Shadow Of Tomb Raider.png",
+    image: "/images/games/Shadow Of Tomb Raider.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Definitive",
@@ -1907,7 +1907,7 @@ const products: IProductInput[] = [
   {
     name: "Spider Man Mile Morales (Playstation)",
     slug: toSlug("Spider Man Mile Morales (Playstation)"),
-    image: "/images/games/Spider Man Mile Morales.png",
+    image: "/images/games/Spider Man Mile Morales.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Launch",
@@ -1927,7 +1927,7 @@ const products: IProductInput[] = [
   {
     name: "Spider Man (Steam)",
     slug: toSlug("Spider Man (Steam)"),
-    image: "/images/games/Spider Man.png",
+    image: "/images/games/Spider Man.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Remastered",
@@ -1947,7 +1947,7 @@ const products: IProductInput[] = [
   {
     name: "Star Rail (Epic Game)",
     slug: toSlug("Star Rail (Epic Game)"),
-    image: "/images/games/Star Rail.png",
+    image: "/images/games/Star Rail.jpg",
     platform: "Epic Game",
     platformImageIcon: "/images/icons/epic-icon.png",
     edition: "Standard",
@@ -1967,7 +1967,7 @@ const products: IProductInput[] = [
   {
     name: "Star Wars Jedi Fallen Order (Steam)",
     slug: toSlug("Star Wars Jedi Fallen Order (Steam)"),
-    image: "/images/games/Star Wars Jedi Fallen Order.png",
+    image: "/images/games/Star Wars Jedi Fallen Order.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Deluxe",
@@ -1987,7 +1987,7 @@ const products: IProductInput[] = [
   {
     name: "Star Wars Jedi Survivor (Steam)",
     slug: toSlug("Star Wars Jedi Survivor (Steam)"),
-    image: "/images/games/Star Wars Jedi Survivor.png",
+    image: "/images/games/Star Wars Jedi Survivor.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Standard",
@@ -2007,7 +2007,7 @@ const products: IProductInput[] = [
   {
     name: "Tales Of Arise (Playstation)",
     slug: toSlug("Tales Of Arise (Playstation)"),
-    image: "/images/games/Tales Of Arise.png",
+    image: "/images/games/Tales Of Arise.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Standard",
@@ -2027,7 +2027,7 @@ const products: IProductInput[] = [
   {
     name: "The Last Of Us Part II Remastered (Playstation)",
     slug: toSlug("The Last Of Us Part II Remastered (Playstation)"),
-    image: "/images/games/The Last Of Us Part II Remastered.png",
+    image: "/images/games/The Last Of Us Part II Remastered.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Remastered",
@@ -2046,7 +2046,7 @@ const products: IProductInput[] = [
   {
     name: "The Last Of Us Remake (Playstation)",
     slug: toSlug("The Last Of Us Remake (Playstation)"),
-    image: "/images/games/The Last Of Us Remake.png",
+    image: "/images/games/The Last Of Us Remake.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Remake",
@@ -2066,7 +2066,7 @@ const products: IProductInput[] = [
   {
     name: "The Legend Of Zelda Breath Of The Wild (Nintendo)",
     slug: toSlug("The Legend Of Zelda Breath Of The Wild (Nintendo)"),
-    image: "/images/games/The Legend Of Zelda Breath Of The Wild.png",
+    image: "/images/games/The Legend Of Zelda Breath Of The Wild.jpg",
     platform: "Nintendo",
     platformImageIcon: "/images/icons/nintendo-icon.png",
     edition: "Standard",
@@ -2086,7 +2086,7 @@ const products: IProductInput[] = [
   {
     name: "The Witcher 3 (Steam)",
     slug: toSlug("The Witcher 3 (Steam)"),
-    image: "/images/games/The Witcher 3.png",
+    image: "/images/games/The Witcher 3.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Game of the Year",
@@ -2104,7 +2104,7 @@ const products: IProductInput[] = [
   {
     name: "The Witcher 3 (Playstation)",
     slug: toSlug("The Witcher 3 (Playstation)"),
-    image: "/images/games/The Witcher 3.png",
+    image: "/images/games/The Witcher 3.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Game of the Year",
@@ -2125,7 +2125,7 @@ const products: IProductInput[] = [
   {
     name: "Tiny Tina Wonderlands (Epic Game)",
     slug: toSlug("Tiny Tina Wonderlands (Epic Game)"),
-    image: "/images/games/Tiny Tina Wonderlands.png",
+    image: "/images/games/Tiny Tina Wonderlands.jpg",
     platform: "Epic Game",
     platformImageIcon: "/images/icons/epic-icon.png",
     edition: "Chaotic Great",
@@ -2145,7 +2145,7 @@ const products: IProductInput[] = [
   {
     name: "Uncharted 4 (Playstation)",
     slug: toSlug("Uncharted 4 (Playstation)"),
-    image: "/images/games/Uncharted 4.png",
+    image: "/images/games/Uncharted 4.jpg",
     platform: "Playstation",
     platformImageIcon: "/images/icons/ps-icon.png",
     edition: "Standard",
@@ -2165,7 +2165,7 @@ const products: IProductInput[] = [
   {
     name: "Watch Dog Legion (Steam)",
     slug: toSlug("Watch Dog Legion (Steam)"),
-    image: "/images/games/Watch Dog Legion.png",
+    image: "/images/games/Watch Dog Legion.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Gold",
@@ -2185,7 +2185,7 @@ const products: IProductInput[] = [
   {
     name: "Wolong Dynasty (Steam)",
     slug: toSlug("Wolong Dynasty (Steam)"),
-    image: "/images/games/Wolong Dynasty.png",
+    image: "/images/games/Wolong Dynasty.jpg",
     platform: "Steam",
     platformImageIcon: "/images/icons/steam-icon.png",
     edition: "Standard",
@@ -2203,7 +2203,7 @@ const products: IProductInput[] = [
   {
     name: "Wolong Dynasty (Xbox)",
     slug: toSlug("Wolong Dynasty (Xbox)"),
-    image: "/images/games/Wolong Dynasty.png",
+    image: "/images/games/Wolong Dynasty.jpg",
     platform: "Xbox",
     platformImageIcon: "/images/icons/xbox-icon.png",
     edition: "Standard",
@@ -2394,7 +2394,6 @@ const data: DataType = {
     { name: "UBISOFT", href: "/ubisoft" },
     { name: "DAILY DEALS", href: "/daily-deals" },
     { name: "NEWS", href: "/news" },
-    { name: "COMING SOON", href: "/coming-soon" },
   ],
   homeCarousels: [
     {

@@ -54,7 +54,7 @@ const ProductCard = ({ product }: { product: IProductInput }) => {
           />
         </Link>
 
-        <div className="absolute top-2 left-2 w-6 h-6 lg:w-10 lg:h-10">
+        <div className="absolute top-2 left-2 w-6 h-6 lg:w-10 lg:h-10 shadow-2xl bg-black rounded-full">
           <Image
             src={product.platformImageIcon}
             alt={product.platform}
