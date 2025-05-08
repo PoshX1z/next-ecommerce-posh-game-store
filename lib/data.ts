@@ -1,4 +1,4 @@
-import { DataType, IProductInput } from "@/types";
+import { DataType, INewsInput, IProductInput } from "@/types";
 import { toSlug } from "./utils";
 
 /* Total 115 Games */
@@ -2241,8 +2241,150 @@ const products: IProductInput[] = [
   },
 ];
 
+const news: INewsInput[] = [
+  /* Headline */
+  {
+    title: "Game of the year 2024 Winner",
+    slug: toSlug("Game of the year 2024 Winner"),
+    briefDetails: "View the game of the year ceremony event",
+    category: "headline",
+    image: "/images/news/game-of-the-year.jpg",
+    content:
+      "The Game Awards 2024 is in the books, and it brought a heap of exciting news, including trailers for The Witcher 4, Okami 2, and Intergalactic: The Heretic Prophet, a new space adventure from Naughty Dog. Of course, in addition to giving us our first glimpse at what's coming in the world of gaming, the show also looked back, honoring the outstanding games – and developers who make them – of the last year.\n\nSix games were nominated for the top prize of Game of the Year: Astro Bot, Balatro, Black Myth: Wukong, Final Fantasy VII Rebirth, Metaphor: ReFantazio, and Elden Ring: Shadow of the Erdtree, with Astro Bot taking home the top prize and three additional wins. Balatro also won big, taking home three awards total.",
+  },
+  /* Sub Headline */
+  {
+    title: "Clair Obscur: Expedition 33 Success Continues",
+    slug: toSlug("Clair Obscur: Expedition 33 Success Continues"),
+    briefDetails: "More than 18 million streams in two weeks.",
+    category: "sub-headline",
+    image: "/images/news/expedition33.jpg",
+    content:
+      "Developer Sandfall Interactive has announced that the Clair Obscur: Expedition 33 soundtrack has managed to top Billboard album charts in the weeks since its release.\n\nAs fans continue to flock to the mega-hit turn-based RPG, one element that seems to have almost everyone pleased is its music. It’s been a specific highlight for those discussing Sandfall’s debut title on social media, and now, that praise is being reflected across Billboard.\n\nHead to the Billboard website and you’ll find that Clair Obscur: Expedition 33 currently sits atop both the Classical Albums and Classical Crossover Albums charts. Sandfall also revealed that the soundtrack has managed to make a mark at 13 on the Official Soundtrack Album chart and 31 on the Official Album Download chart. It means players are gravitating to more than just the experience’s story and gameplay as its dreamlike tunes back the entire adventure.",
+  },
+  {
+    title: "As Call of Duty: Warzone Cheating Continues",
+    slug: toSlug("As Call of Duty: Warzone Cheating Continues"),
+    briefDetails: "Scrambled.",
+    category: "sub-headline",
+    image: "/images/news/call-of-duty-cheat.jpg",
+    content:
+      "It had been hoped that Warzone's cheating problem would improve following Verdansk’s release, but the honeymoon period has well and truly come to an end, with players reporting that cheaters are back in force.\n\n“Geegees Cheaters...it is your game now. Enjoy,” declared redditor Patient-Author-2960. “Big congrats to all the cheaters for finally conquering the game again and donkey punching Verdansk. You guys really stuck with it, grinding those walls and aimbots to perfection. It must feel amazing to dominate lobbies without any actual skill. Welcome back.”\n\nAmid this fresh wave of negativity, Activision has published an anti-cheat update from its Ricochet team, recapping what’s gone on with Season 3. Activision failed to address this apparent rise in Warzone cheating, but did outline the work it has been doing to address the problem of cheating generally across Warzone and Black Ops 6.\n\n“Our commitment is to keep cheaters out of the game and, for those who make it past our initial systems, identify and remove them as quickly as possible,” Activision said.\n\n“The Ricochet Anti-Cheat team is hard at work taking on would-be cheaters throughout the game, including those looking to steal leaderboard glory.”",
+  },
+  {
+    title: "Disney Announces Movie Everyone Waiting For",
+    slug: toSlug("Disney Announces Movie Everyone Waiting For"),
+    briefDetails:
+      "The park will be the 'most advanced and interactive destination in our portfolio.'",
+    category: "sub-headline",
+    image: "/images/news/disney-announcement.jpg",
+    content:
+      "The Walt Disney Company and Miral, Abu Dhabi’s leading creator of immersive destinations and experiences, announced an agreement to create a landmark Disney theme park resort in Abu Dhabi, United Arab Emirates. The waterfront resort will be located on Yas Island, a world-class destination for entertainment and leisure, connecting travelers from the Middle East and Africa, India, Asia, Europe, and beyond. This seventh Disney theme park resort will combine Disney’s iconic stories, characters and attractions with Abu Dhabi’s vibrant culture, stunning shorelines, and breathtaking architecture.\n\n“Abu Dhabi is a place where heritage meets innovation, where we preserve our past while designing the future,” His Excellency Mohamed Khalifa Al Mubarak, Chairman at Miral, said. “The collaboration between Abu Dhabi and Disney demonstrates the remarkable results of combining visionary leadership and creative excellence. What we are creating with Disney in Abu Dhabi is a whole new world of imagination — an experience that will inspire generations across the region and the world, creating magical moments and memories that families will treasure forever. Through the development of unique attractions and experiences, Abu Dhabi continues to be a destination of choice for the world.”",
+  },
+  {
+    title: "EA Bucks Industry Trending News",
+    slug: toSlug("EA Bucks Industry Trending News"),
+    briefDetails: "Our business is very different today",
+    category: "sub-headline",
+    image: "/images/news/ea-bucks-trend.jpg",
+    content:
+      'Publisher/ developer EA has confirmed it has no plans to raise the price of its games even as the likes of Microsoft and Nintendo jump to $80. Addressing investors in its latest financial call, CEO Andrew Wilson said the company\'s focus was to "deliver incredible quality and exponential value for our playerbase," such as its hit co-op adventure Split Fiction, which has now sold 4 million copies. [...]',
+  },
+  /* Urgent News */
+  {
+    title: "Naughty Dog Teases New Sci-Fi IP",
+    slug: toSlug("Naughty Dog Teases New Sci-Fi IP"),
+    briefDetails: "First concept art revealed at Summer Game Fest.",
+    category: "urgent-news",
+    image: "/images/news/naughty-dog.jpg",
+    content:
+      "Naughty Dog has officially revealed the first concept art for its upcoming sci-fi IP during the Summer Game Fest 2025. Known for its award-winning titles like The Last of Us and Uncharted, the studio is now moving into a new genre with a deep-space narrative focused on survival and exploration.\n\nCo-president Neil Druckmann described the project as 'one of the most ambitious stories we've ever told,' hinting at dynamic world-building and player-driven progression. While details are still limited, early fan reaction has been overwhelmingly positive, with the teaser art trending on social platforms within hours of its release.\n\nNaughty Dog confirmed the game is still in early development, but it has been internally playtesting a prototype since Q1 2025.",
+  },
+
+  {
+    title: "Xbox Game Pass Hits 40 Million Subscribers",
+    slug: toSlug("Xbox Game Pass Hits 40 Million Subscribers"),
+    briefDetails: "Subscription milestone surpassed after Starfield DLC drop.",
+    category: "urgent-news",
+    image: "/images/news/xbox-game-pass.jpg",
+    content:
+      "Microsoft has announced that Xbox Game Pass has officially reached 40 million active subscribers, marking a major milestone for the service. The boost in numbers followed the launch of the highly anticipated Starfield: Echoes of Eternity DLC, which became the most downloaded expansion in Game Pass history within 72 hours.\n\nPhil Spencer, CEO of Microsoft Gaming, credited the milestone to Game Pass’s growing PC audience and day-one launches. 'We’ve focused on delivering unmatched value to players across all platforms,' Spencer said during the announcement livestream.\n\nThis news follows recent improvements to the Game Pass UI and the rollout of a loyalty program tied to monthly achievements.",
+  },
+
+  {
+    title: "PlayStation Studios Acquires Emberlight Games",
+    slug: toSlug("PlayStation Studios Acquires Emberlight Games"),
+    briefDetails: "New acquisition boosts PS5-exclusive RPG lineup.",
+    category: "urgent-news",
+    image: "/images/news/playstation-studio.png",
+    content:
+      "Sony has announced the acquisition of Emberlight Games, an independent studio known for its stylized RPG hit *Ashen Flame*. The studio will now operate under the PlayStation Studios umbrella, with plans already in motion for an exclusive new title set to release on PS5 in late 2026.\n\nIn an official statement, Head of PlayStation Studios Hermen Hulst praised Emberlight’s 'creative independence and world-class art direction,' stating that their next project will be 'a genre-defining adventure rooted in narrative excellence.'\n\nThe acquisition is part of Sony’s broader strategy to expand first-party development and bolster its lineup of narrative-rich single-player experiences.",
+  },
+
+  {
+    title: "Steam Breaks Concurrent Player Record Again",
+    slug: toSlug("Steam Breaks Concurrent Player Record Again"),
+    briefDetails: "Over 38 million players online simultaneously.",
+    category: "urgent-news",
+    image: "/images/news/steam-break-record.jpg",
+    content:
+      "Valve’s digital distribution platform Steam has broken its all-time concurrent user record once again, with over 38 million players online at the same time last weekend. The surge was largely driven by a combination of a global free-play event, the launch of *Monster Hunt: Zero Dawn*, and ongoing seasonal discounts.\n\nAccording to SteamDB, more than 14 million users were actively in-game, with the rest browsing or downloading content. The top three most-played titles were *Counter-Strike 2*, *Elden Ring: Shadow of the Erdtree*, and *Monster Hunt: Zero Dawn*.\n\nValve released a statement thanking players for their continued support and teased a major platform update arriving this fall, including UI improvements and new community features.",
+  },
+
+  /* Games News */
+  {
+    title: "Hades II Early Access Launch Surpasses Expectations",
+    slug: toSlug("Hades II Early Access Launch Surpasses Expectations"),
+    briefDetails: "Supergiant’s sequel hits 1M players in under a week.",
+    category: "game-news",
+    image: "/images/news/hades-news.jpg",
+    content:
+      "Supergiant Games has officially launched Hades II in Early Access, and the response has been overwhelming. Within the first 72 hours, the game surpassed one million active players, setting a new record for the studio.\n\nFans and critics have praised its deeper combat mechanics, expanded mythology, and enhanced replayability. Developer Greg Kasavin shared that community feedback during Early Access will shape the game over the next several months, with full release expected in 2026.\n\nHades II builds upon its predecessor’s roguelike foundation with new gods, realms, and the introduction of Chronos, the Titan of Time, as the primary antagonist.",
+  },
+
+  {
+    title: "GTA VI Trailer Sets YouTube Gaming Record",
+    slug: toSlug("GTA VI Trailer Sets YouTube Gaming Record"),
+    briefDetails: "100M views in 24 hours after surprise drop.",
+    category: "game-news",
+    image: "/images/news/gta-vi-trailer.jpg",
+    content:
+      "Rockstar Games’ surprise release of the GTA VI official trailer has shattered YouTube Gaming records, amassing over 100 million views in a single day. The trailer confirmed a 2026 launch window and revealed Vice City as the returning location, complete with a duo of protagonists.\n\nFans are especially excited about the graphical fidelity and what appears to be fully dynamic NPC systems. Rockstar hasn’t shared additional gameplay details yet, but has promised a gameplay deep dive later this summer.\n\nThe trailer’s drop marks one of the most highly anticipated reveals in gaming history, drawing comparisons to GTA V’s historic 2013 launch.",
+  },
+
+  {
+    title: "Final Fantasy XVI PC Port Announced for 2025",
+    slug: toSlug("Final Fantasy XVI PC Port Announced for 2025"),
+    briefDetails: "Square Enix promises optimizations for ultra-wide support.",
+    category: "game-news",
+    image: "/images/news/ff-xvi-pc-port.png",
+    content:
+      "Square Enix has officially confirmed a PC version of Final Fantasy XVI is in development, targeting a mid-2025 release. The announcement was made during a special livestream celebrating the game’s first anniversary.\n\nDirector Hiroshi Takai stated the PC port will include visual and performance upgrades, as well as ultra-wide monitor support and a new customizable difficulty mode. The team is also preparing a demo for Steam to be released later this year.\n\nOriginally a PS5 exclusive, FF16 drew praise for its cinematic story and real-time combat, and fans have long awaited its arrival on PC.",
+  },
+
+  {
+    title: "Elden Ring DLC Gets Official Release Date",
+    slug: toSlug("Elden Ring DLC Gets Official Release Date"),
+    briefDetails: "Shadow of the Erdtree lands June 21, 2025.",
+    category: "game-news",
+    image: "/images/news/elden-ring-dlc.jpg",
+    content:
+      "FromSoftware has finally unveiled the launch date for its highly anticipated Elden Ring expansion, *Shadow of the Erdtree*. The DLC will be available on all platforms starting June 21, 2025, and includes an entirely new region known as the Realm of Shadow.\n\nDirector Hidetaka Miyazaki revealed that the expansion will offer around 20 hours of new content, including fresh bosses, weapons, and lore tied to Miquella’s mysterious story arc.\n\nPre-orders are now live, with a collector’s edition featuring a Miquella statue and art book already trending across major retailers.",
+  },
+
+  {
+    title: "Unity Announces New AI-Powered Game Development Tools",
+    slug: toSlug("Unity Announces New AI-Powered Game Development Tools"),
+    briefDetails: "Unity 2025 suite introduces real-time NPC behavior system.",
+    category: "game-news",
+    image: "/images/news/unity-announce-ai.jpg",
+    content:
+      "Unity Technologies has announced a new set of AI-powered tools as part of its Unity 2025 development suite. Among the highlights is a real-time NPC behavior editor that allows developers to train and simulate complex character interactions without traditional scripting.\n\nThe tools also include automated level design assistance, voice generation, and in-editor playtesting analytics—all built with accessibility in mind. According to Unity, these updates aim to cut dev time for small studios by up to 40%.\n\nThe new suite is currently in closed beta, with a general rollout expected in Q4 2025 for Pro subscribers.",
+  },
+];
 const data: DataType = {
   products,
+  news,
   headerMenus: [
     { name: "PC", href: "/pc" },
     { name: "PLAYSTATION", href: "/ps" },

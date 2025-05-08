@@ -42,3 +42,16 @@ model User{
     password String
     createdAt DateTime @default(now())
 }
+
+model News{
+    id String @id @default(cuid())
+    title String
+    slug String @unique
+    briefDetails String
+    category String
+    image String
+    content String
+
+    createdAt DateTime @default(now())
+    updateAt DateTime @updatedAt
+}

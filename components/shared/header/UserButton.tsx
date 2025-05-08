@@ -79,11 +79,11 @@ const UserButton = () => {
                   href="/account/sign-in"
                   className="w-full text-base font-bold text-white hover:text-black"
                 >
-                  Sign In
+                  SIGN IN
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuLabel className="text-base font-bold text-white px-3 pt-2">
-                Don’t have an account?{" "}
+                DON’T HAVE AN ACCOUNT?{" "}
                 <Link
                   href="/account/sign-up"
                   className="text-pink-300 underline hover:text-white "
