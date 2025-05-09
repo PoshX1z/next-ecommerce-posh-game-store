@@ -40,7 +40,7 @@ const ProductDetailsItem = ({ product }: { product: IProductInput }) => {
   };
   return (
     <div className="flex flex-col md:flex-row gap-10 items-center md:items-start">
-      <div className="relative w-44 h-56 sm:w-52 sm:h-80 md:w-60 md:h-96 lg:w-72 lg:h-[500px] rounded-lg overflow-hidden shadow-lg border border-indigo-700">
+      <div className="relative w-44 h-56 sm:w-56 sm:h-80 md:w-72 md:h-[500px] lg:w-96 lg:h-[600px] rounded-lg overflow-hidden shadow-lg border border-indigo-700">
         <Image
           src={product.image ?? "/placeholder.png"}
           alt={product.name ?? "image"}

@@ -1,7 +1,9 @@
+import { formatDate } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
-const ProductCardOrder = () => {
+const ProductCardOrder = ({ order }: { order: any }) => {
   return (
     <li className="list-none bg-white rounded-xl overflow-hidden shadow-lg">
       <div className="flex flex-col md:flex-row">
@@ -9,8 +11,8 @@ const ProductCardOrder = () => {
         <div className="px-5 py-5 bg-gray-100 flex justify-center items-center">
           <div className="relative w-40 h-60 md:w-56 md:h-80 rounded-xl overflow-hidden shadow-md">
             <Image
-              src="/images/games/Control.png"
-              alt="Control"
+              src={order.image}
+              alt={order.name}
               fill
               className="object-cover"
             />
@@ -20,22 +22,23 @@ const ProductCardOrder = () => {
         {/* Order Details */}
         <div className="bg-gray-200 flex-1 px-6 py-6 space-y-2 text-sm md:text-base">
           <h1 className="text-black font-semibold">
-            ORDER NUMBER: <span className="font-normal">34325245453afefd</span>
+            ORDER NUMBER:{" "}
+            <span className="font-normal">#{order.orderNumber}</span>
           </h1>
           <h1 className="text-black font-semibold">
-            NAME: <span className="font-normal">Control</span>
+            NAME: <span className="font-normal">{order.name}</span>
           </h1>
           <h1 className="text-black font-semibold">
-            DATE ORDERED: <span className="font-normal">10/12/2024</span>
+            DATE ORDERED:{" "}
+            <span className="font-normal">{formatDate(order.createdAt)}</span>
+          </h1>
+
+          <h1 className="text-black font-semibold">
+            PLATFORM: <span className="font-normal">{order.platform}</span>
           </h1>
           <h1 className="text-black font-semibold">
-            PAYMENT METHOD: <span className="font-normal">PROMPTPAY</span>
-          </h1>
-          <h1 className="text-black font-semibold">
-            PLATFORM: <span className="font-normal">EPIC GAME</span>
-          </h1>
-          <h1 className="text-black font-semibold">
-            PRICE: <span className="font-normal">฿1299</span>
+            PRICE:{" "}
+            <span className="font-normal">฿{order.price.toLocaleString()}</span>
           </h1>
         </div>
 

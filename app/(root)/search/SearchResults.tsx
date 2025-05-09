@@ -10,14 +10,24 @@ const SearchResults = () => {
   const searchParams = useSearchParams(); // Accesses query parameter.
   const query = searchParams.get("q") || ""; // Retrieves "q" value
   const [products, setProducts] = useState<IProductInput[]>([]);
-
+  const [isLoading, setIsLoading] = useState(false);
   // Function to fetch products based on the query.
   useEffect(() => {
     const fetchProducts = async () => {
       if (!query) return "";
-      const res = await fetch(`/api/search?q=${encodeURIComponent(query)}`);
-      const data = await res.json();
-      setProducts(data);
+      setIsLoading(true);
+      await new Promise((resolve) => setTimeout(resolve, 300));
+
+      try {
+        const res = await fetch(`/api/search?q=${encodeURIComponent(query)}`);
+        const data = await res.json();
+        setProducts(data);
+      } catch (error) {
+        console.error("Search failed:", error);
+        setProducts([]);
+      } finally {
+        setIsLoading(false);
+      }
     };
     fetchProducts();
   }, [query]);
@@ -27,8 +37,9 @@ const SearchResults = () => {
         <Title title="Search Result for " medium />
         <Title title={`${query}`} small />
       </div>
-
-      {products.length > 0 ? (
+      {isLoading ? (
+        <p className="text-lg font-semibold">Loading...</p>
+      ) : products.length > 0 ? (
         <div className="product-wrapper">
           {products.map((product) => (
             <ProductCard key={product.slug} product={product} />

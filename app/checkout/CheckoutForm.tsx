@@ -2,12 +2,15 @@
 
 import { Input } from "@/components/ui/input";
 import { useCartStore } from "@/hooks/useCartStore";
+import { generateRandomOrderNumber } from "@/lib/utils";
+
 import { CreditCard } from "lucide-react";
 import { useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
+
 const CheckoutForm = () => {
   const { status } = useSession();
   const router = useRouter();
@@ -17,13 +20,48 @@ const CheckoutForm = () => {
     }
   }, [status, router]);
 
-  const [selected, setIsSelected] = useState("");
   const cart = useCartStore((state) => state.cart);
+  const clearCart = useCartStore((state) => state.clearCart);
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
   const totalPrice = cart.reduce(
     (sum, item) => sum + item.price * item.quantity,
     0
   );
+
+  /* Payment Section */
+  const [selected, setSelected] = useState("");
+  const handleOrderSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const createdAt = new Date().toISOString();
+    const newOrder = {
+      items: cart.map((item) => ({
+        ...item,
+        orderNumber: generateRandomOrderNumber(),
+        createdAt,
+      })),
+      totalItems,
+      totalPrice,
+    };
+
+    // Get existing orders (or start fresh if none exist)
+    const existingOrders = JSON.parse(
+      localStorage.getItem("all-orders") || "[]"
+    );
+
+    // Append new order to existing
+    const updatedOrders = [...existingOrders, newOrder];
+
+    // Save back to localStorage
+    localStorage.setItem("all-orders", JSON.stringify(updatedOrders));
+
+    // Optionally, keep last order separately if still needed
+    localStorage.setItem("last-order", JSON.stringify(newOrder));
+
+    router.push("/account/order");
+    clearCart();
+  };
+
   return (
     <div className="flex gap-10 flex-col md:flex-row">
       <div className="flex-2">
@@ -46,7 +84,7 @@ const CheckoutForm = () => {
                   name="payment"
                   value="promptpay"
                   checked={selected === "promptpay"}
-                  onChange={() => setIsSelected("promptpay")}
+                  onChange={() => setSelected("promptpay")}
                   className="w-6 h-6 md:w-8 md:h-8"
                 />
                 <h1 className="text-lg md:text-2xl">
@@ -61,19 +99,22 @@ const CheckoutForm = () => {
               />
             </div>
             {selected === "promptpay" ? (
-              <form className="flex flex-col gap-5">
+              <form
+                onSubmit={handleOrderSubmit}
+                className="flex flex-col gap-5"
+              >
                 <div className="flex flex-col gap-5">
                   <div className="flex flex-col gap-2">
                     <label>Email Address</label>
-                    <Input />
+                    <Input type="email" />
                   </div>
                   <div className="flex flex-col gap-2">
                     <label>Name</label>
-                    <Input />
+                    <Input type="text" />
                   </div>
                   <div className="flex flex-col gap-2">
                     <label>Phone Number</label>
-                    <Input />
+                    <Input type="number" />
                   </div>
                 </div>
                 <button
@@ -95,7 +136,7 @@ const CheckoutForm = () => {
                   name="payment"
                   value="paypal"
                   checked={selected === "paypal"}
-                  onChange={() => setIsSelected("paypal")}
+                  onChange={() => setSelected("paypal")}
                   className="w-6 h-6 md:w-8 md:h-8"
                 />
                 <h1 className="text-lg md:text-2xl">Paypal</h1>
@@ -113,7 +154,27 @@ const CheckoutForm = () => {
             </div>
             {selected === "paypal" ? (
               <div>
-                <Link href="/">Paypal</Link>
+                <form
+                  onSubmit={handleOrderSubmit}
+                  className="flex flex-col gap-5"
+                >
+                  <div className="flex flex-col gap-5">
+                    <div className="flex flex-col gap-2">
+                      <label>Email Address</label>
+                      <Input type="email" />
+                    </div>
+                    <div className="flex flex-col gap-2">
+                      <label>Password</label>
+                      <Input type="password" />
+                    </div>
+                  </div>
+                  <button
+                    type="submit"
+                    className="bg-sky-500 p-2 md:p-5 cursor-pointer text-lg md:text-2xl hover:brightness-95 active:brightness-100"
+                  >
+                    BUY NOW
+                  </button>
+                </form>
               </div>
             ) : (
               ""
@@ -127,7 +188,7 @@ const CheckoutForm = () => {
                   name="payment"
                   value="card"
                   checked={selected === "card"}
-                  onChange={() => setIsSelected("card")}
+                  onChange={() => setSelected("card")}
                   className="w-6 h-6 md:w-8 md:h-8"
                 />
                 <h1 className="text-lg md:text-2xl">Credit/Debit Card</h1>
@@ -135,15 +196,15 @@ const CheckoutForm = () => {
               <CreditCard className="w-6 h-6 md:w-8 md:h-8" />
             </div>
             {selected === "card" ? (
-              <form>
+              <form onSubmit={handleOrderSubmit}>
                 <div className="flex flex-col gap-5">
                   <div className="flex flex-col gap-2">
                     <label>Card number</label>
-                    <Input />
+                    <Input type="number" />
                   </div>
                   <div className="flex flex-col gap-2">
                     <label>Name on card</label>
-                    <Input />
+                    <Input type="text" />
                   </div>
                   <div className="flex gap-5">
                     <div className="flex flex-col gap-2 flex-1">

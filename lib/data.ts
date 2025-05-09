@@ -100,6 +100,7 @@ const products: IProductInput[] = [
     delivery: "Account",
     tag: "daily-deals",
   },
+
   {
     name: "Assassin's Creed Odyssey (Playstation)",
     slug: toSlug("Assassin's Creed Odyssey (Playstation)"),

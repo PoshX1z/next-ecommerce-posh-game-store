@@ -30,7 +30,6 @@ model Product{
     publisher String
     delivery String
     tag String?
-
     createdAt DateTime @default(now())
     updateAt DateTime @updatedAt
 }

@@ -7,6 +7,7 @@ export type IProductInput = z.infer<typeof ProductInputSchema>;
 export type IUserSignIn = z.infer<typeof SignInUserSchema>;
 export type IUserSignUp = z.infer<typeof SignUpUserSchema>;
 export type INewsInput = z.infer<typeof NewsInputSchema>;
+
 export type DataType = {
   products: IProductInput[];
   news: INewsInput[];
