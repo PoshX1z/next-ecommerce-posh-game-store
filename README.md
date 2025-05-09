@@ -1,5 +1,3 @@
-![next-posh-game-store-mobile-21](https://github.com/user-attachments/assets/3a3a21db-d0ce-4d27-93f8-fdb6ada35041)![next-posh-game-store-mobile-01](https://github.com/user-attachments/assets/ef71a074-f697-4053-b481-980ebfc752d9)![next-posh-game-store-13](https://github.com/user-attachments/assets/e976f4b5-4c4a-47ae-a9b4-4c0b3d122a43)# 🎮 Posh Game Store
-
 **Posh Game Store** is a full-featured e-commerce web application for selling games, inspired by modern storefronts and built with cutting-edge tools like **Next.js**, **TypeScript**, and **Tailwind CSS**. Whether you’re into PC games or console titles, this platform delivers a sleek and immersive buying experience.
 
 ---
