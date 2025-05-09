@@ -41,7 +41,7 @@ const CartItemPage = () => {
                   >
                     <Trash2 />
                   </button>
-                  <div className="relative w-20 h-28 md:w-32  md:h-44 flex-shrink-0 rounded overflow-hidden">
+                  <div className="relative w-24 h-40 md:w-32  md:h-44 flex-shrink-0 rounded overflow-hidden">
                     <Image
                       src={item.image}
                       alt="control"
@@ -55,22 +55,28 @@ const CartItemPage = () => {
                         <p className="text-base md:text-xl font-semibold line-clamp-1">
                           {item.name}
                         </p>
+                        <p className="text-sm text-gray-300 md:text-lg font-semibold line-clamp-1">
+                          {item.edition}
+                        </p>
+                        <p className="text-sm text-gray-300 md:text-lg font-semibold line-clamp-1">
+                          {item.platform}
+                        </p>
                       </Link>
-                      <p className="text-yellow-300 font-bold text-base md:text-xl">
+                      <p className="text-yellow-300 font-bold text-base md:text-xl mt-5">
                         ฿{item.price.toLocaleString()}
                       </p>
                     </div>
 
                     <div className="flex items-center gap-3">
                       <button
-                        className="w-8 h-8 bg-amber-800 hover:bg-amber-700 rounded text-white"
+                        className="w-8 h-8 bg-cyan-900 hover:bg-cyan-800 rounded text-white"
                         onClick={() => decreaseCartQuantity(item.slug)}
                       >
                         −
                       </button>
                       <span className="font-bold">{item.quantity}</span>
                       <button
-                        className="w-8 h-8 bg-amber-800 hover:bg-amber-700 rounded text-white"
+                        className="w-8 h-8 bg-cyan-900 hover:bg-cyan-800 rounded text-white"
                         onClick={() => increaseCartQuantity(item.slug)}
                       >
                         +

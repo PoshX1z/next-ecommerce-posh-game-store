@@ -22,51 +22,52 @@ const UserButton = () => {
           <DropdownMenuTrigger>
             <div className="relative w-8 h-8 md:w-10 md:h-10">
               <Image
-                src="/images/utils/user-profile-01.png"
+                src="/images/utils/user-profile.png"
                 alt="User Avatar"
                 fill
-                className="rounded-full border-2 border-purple-500 hover:shadow-lg transition duration-200"
+                sizes="(min-width: 768px) 40px, 32px"
+                className="rounded-full border-2 border-sky-500 hover:shadow-lg transition duration-200"
               />
             </div>
           </DropdownMenuTrigger>
         ) : (
-          <DropdownMenuTrigger className="flex items-center gap-2 rounded-full border border-purple-300 p-2 hover:shadow-lg bg-purple-600 hover:bg-purple-700 transition duration-200">
+          <DropdownMenuTrigger className="flex items-center gap-2 rounded-full border border-sky-300 p-2 hover:shadow-lg bg-purple-600 hover:bg-purple-700 transition ease-in-out">
             <User className="h-6 w-6 text-white" />
           </DropdownMenuTrigger>
         )}
 
         {/* Menu Content */}
-        <DropdownMenuContent className="w-40 sm:w-48 md:w-56 lg:w-64 p-3 shadow-2xl rounded-xl bg-purple-600 border border-purple-500 space-y-1">
+        <DropdownMenuContent className="w-48 sm:w-56 md:w-64 p-3 shadow-2xl rounded-xl bg-cyan-400 border border-purple-500 space-y-1">
           {session ? (
             <DropdownMenuGroup>
-              <DropdownMenuItem className="rounded-md px-3 py-2 transition">
+              <DropdownMenuItem className="rounded-md px-3 py-2 ">
                 <Link
                   href="/account/manage"
-                  className="w-full text-base font-bold text-pink-200 hover:text-black"
+                  className="w-full text-base font-bold text-blue-800"
                 >
                   MY ACCOUNT
                 </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem className=" rounded-md px-3 py-2 transition">
+              <DropdownMenuItem className=" rounded-md px-3 py-2 transition ease-in-out">
                 <Link
                   href="/account/order"
-                  className="w-full text-base font-bold text-indigo-200 hover:text-black"
+                  className="w-full text-base font-bold text-blue-800"
                 >
                   MY ORDERS
                 </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem className="rounded-md px-3 py-2 transition">
+              <DropdownMenuItem className="rounded-md px-3 py-2 transition ease-in-out">
                 <Link
-                  href="/account/wishlist"
-                  className="w-full text-base font-bold text-purple-100 hover:text-black"
+                  href="/wishlist"
+                  className="w-full text-base font-bold text-blue-800"
                 >
                   MY WISHLIST
                 </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem className="rounded-md px-3 py-2 transition">
+              <DropdownMenuItem className="rounded-md px-3 py-2 transition ease-in-out">
                 <button
                   onClick={() => signOut({ callbackUrl: "/" })}
-                  className="w-full text-left text-base font-bold text-red-300 hover:text-black"
+                  className="w-full text-left text-base text-red-700 font-bold underline"
                 >
                   SIGN OUT
                 </button>
@@ -74,19 +75,19 @@ const UserButton = () => {
             </DropdownMenuGroup>
           ) : (
             <DropdownMenuGroup>
-              <DropdownMenuItem className="rounded-md px-3 py-2 transition">
+              <DropdownMenuItem className="rounded-md px-3 py-2 transition ease-in-out">
                 <Link
                   href="/account/sign-in"
-                  className="w-full text-base font-bold text-white hover:text-black"
+                  className="w-full text-base font-bold text-blue-800"
                 >
                   SIGN IN
                 </Link>
               </DropdownMenuItem>
-              <DropdownMenuLabel className="text-base font-bold text-white px-3 pt-2">
+              <DropdownMenuLabel className="text-base font-bold text-blue-800 px-3 pt-2">
                 DON’T HAVE AN ACCOUNT?{" "}
                 <Link
                   href="/account/sign-up"
-                  className="text-pink-300 underline hover:text-white "
+                  className="text-red-700 font-bold underline"
                 >
                   SIGN UP
                 </Link>

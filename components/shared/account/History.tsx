@@ -19,7 +19,7 @@ const History = () => {
   }, []);
   return (
     <div className="pt-10">
-      <div className="flex gap-10">
+      <div className="flex flex-col md:flex-row gap-10">
         <SideTab />
         <div className="w-full md:w-3/4">
           <h1 className="text-center text-3xl font-bold">HISTORY</h1>

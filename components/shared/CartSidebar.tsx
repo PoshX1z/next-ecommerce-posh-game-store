@@ -60,14 +60,14 @@ const CartSidebar = ({ onClose }: { onClose: () => void }) => {
 
                 <div className="flex items-center gap-2 max-w-1/2">
                   <button
-                    className="bg-amber-900 text-white w-6 h-6 rounded hover:bg-amber-800"
+                    className="bg-cyan-900 text-white w-6 h-6 rounded hover:bg-cyan-800"
                     onClick={() => decreaseCartQuantity(item.slug)}
                   >
                     −
                   </button>
                   <span className="font-bold">{item.quantity}</span>
                   <button
-                    className="bg-amber-900 text-white w-6 md:h-6 rounded hover:bg-amber-800"
+                    className="bg-cyan-900 text-white w-6 md:h-6 rounded hover:bg-cyan-800"
                     onClick={() => increaseCartQuantity(item.slug)}
                   >
                     +

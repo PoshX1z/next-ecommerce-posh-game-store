@@ -2422,5 +2422,10 @@ const data: DataType = {
       buttonCaption: "SHOP NOW",
     },
   ],
+  discountCode: [
+    { code: "poshstore555", discount: 10 },
+    { code: "pratchaya", discount: 15 },
+    { code: "leelanuwat", discount: 15 },
+  ],
 };
 export default data;

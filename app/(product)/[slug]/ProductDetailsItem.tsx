@@ -6,7 +6,9 @@ import { toast } from "sonner";
 import { IProductInput } from "@/types";
 import { useEffect, useState } from "react";
 import { useCartStore } from "@/hooks/useCartStore";
+import { useRouter } from "next/navigation";
 const ProductDetailsItem = ({ product }: { product: IProductInput }) => {
+  const router = useRouter();
   const addToCart = useCartStore((state) => state.addToCart);
   const addToWishlist = useWishListStore((state) => state.addToWishlist);
   const removeFromWishlist = useWishListStore(
@@ -14,7 +16,6 @@ const ProductDetailsItem = ({ product }: { product: IProductInput }) => {
   );
   const isInWishlist = useWishListStore((state) => state.isInWishlist);
   const [isWishlisted, setIsWishlist] = useState(false);
-
   useEffect(() => {
     setIsWishlist(isInWishlist(product.slug));
   }, [product.slug, isInWishlist]);
@@ -38,6 +39,14 @@ const ProductDetailsItem = ({ product }: { product: IProductInput }) => {
       description: "View it in your cart or continue shopping",
     });
   };
+
+  const handleAddToCartAndGoToCheckoutPage = () => {
+    addToCart(product);
+    toast.success(`${product.name} added to cart successfully`, {
+      description: "View it in your cart or continue shopping",
+    });
+    router.push("/checkout");
+  };
   return (
     <div className="flex flex-col md:flex-row gap-10 items-center md:items-start">
       <div className="relative w-44 h-56 sm:w-56 sm:h-80 md:w-72 md:h-[500px] lg:w-96 lg:h-[600px] rounded-lg overflow-hidden shadow-lg border border-indigo-700">
@@ -45,10 +54,19 @@ const ProductDetailsItem = ({ product }: { product: IProductInput }) => {
           src={product.image ?? "/placeholder.png"}
           alt={product.name ?? "image"}
           fill
-          className="object-cover"
           priority
+          sizes="(min-width: 1024px) 384px, (min-width: 768px) 288px, (min-width: 640px) 224px, 176px"
+          className="object-cover"
         />
-
+        <div className="absolute top-2 left-2 w-6 h-6 lg:w-10 lg:h-10 shadow-2xl bg-black rounded-full">
+          <Image
+            src={product.platformImageIcon}
+            alt={product.platform}
+            width={40}
+            height={40}
+            priority
+          />
+        </div>
         <button className="absolute top-2 right-2 p-1 bg-black/60 rounded-full">
           {isWishlisted ? (
             <HeartOff
@@ -104,7 +122,10 @@ const ProductDetailsItem = ({ product }: { product: IProductInput }) => {
             <ShoppingCartIcon className="w-5 h-5" />
             Buy Now
           </button>
-          <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-2 rounded-lg transition">
+          <button
+            className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-2 rounded-lg transition"
+            onClick={handleAddToCartAndGoToCheckoutPage}
+          >
             Promptpay
           </button>
         </div>

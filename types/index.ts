@@ -18,4 +18,8 @@ export type DataType = {
     href: string;
     buttonCaption: string;
   }[];
+  discountCode: {
+    code: string;
+    discount: number;
+  }[];
 };

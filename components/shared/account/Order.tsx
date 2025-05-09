@@ -20,10 +20,10 @@ const Order = () => {
 
   return (
     <div className="pt-10">
-      <div className="flex gap-10">
+      <div className="flex flex-col md:flex-row gap-10">
         <SideTab />
         <div className="w-full md:w-3/4">
-          <h1 className="text-center text-3xl font-bold">ORDER</h1>
+          <h1 className="text-center text-3xl font-bold">MY ORDERS</h1>
           <div>
             <div className="border-b border-white my-5"></div>
             <h1 className="text-2xl py-5 font-bold">ORDER PURCHASED:</h1>
@@ -35,9 +35,11 @@ const Order = () => {
                 You do not have any orders
               </div>
             )}
-            {orders?.items.map((order) => (
-              <ProductCardOrder order={order} key={order.slug} />
-            ))}
+            <div className="flex flex-col gap-5 md:gap-10">
+              {orders?.items.map((order) => (
+                <ProductCardOrder order={order} key={order.slug} />
+              ))}
+            </div>
           </div>
         </div>
       </div>

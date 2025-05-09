@@ -2,6 +2,7 @@
 
 import { Input } from "@/components/ui/input";
 import { useCartStore } from "@/hooks/useCartStore";
+import data from "@/lib/data";
 import { generateRandomOrderNumber } from "@/lib/utils";
 
 import { CreditCard } from "lucide-react";
@@ -61,12 +62,32 @@ const CheckoutForm = () => {
     router.push("/account/order");
     clearCart();
   };
+  const [discountCode, setDiscountCode] = useState("");
+  const [appliedDiscountCode, setAppliedDiscountCode] = useState(0);
 
+  const handleDiscountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const code = e.target.value.trim().toLowerCase();
+    setDiscountCode(code);
+
+    const found = data.discountCode.find((d) => d.code.toLowerCase() === code);
+    if (found) {
+      setAppliedDiscountCode(found.discount);
+    } else {
+      setAppliedDiscountCode(0);
+    }
+  };
+
+  const discountedPrice = totalPrice * (appliedDiscountCode / 100);
+  const discountedPriceTotal =
+    totalPrice - (totalPrice * appliedDiscountCode) / 100;
   return (
     <div className="flex gap-10 flex-col md:flex-row">
       <div className="flex-2">
-        <div className="border-b border-white py-5 mt-10 hover:text-red-300 transition ease-in-out">
-          <Link href="/cart" className="flex px-5 md:px-0 gap-3 md:ap-5">
+        <div className="border-b border-white py-5 mt-10">
+          <Link
+            href="/cart"
+            className="flex px-5 md:px-0 gap-3 md:ap-5 hover:text-red-300 transition ease-in-out"
+          >
             &lt;
             <h1 className="text-xl">View Cart</h1>
           </Link>
@@ -85,7 +106,7 @@ const CheckoutForm = () => {
                   value="promptpay"
                   checked={selected === "promptpay"}
                   onChange={() => setSelected("promptpay")}
-                  className="w-6 h-6 md:w-8 md:h-8"
+                  className="w-8 h-8"
                 />
                 <h1 className="text-lg md:text-2xl">
                   Promptpay (Preferred Payment Method)
@@ -106,15 +127,23 @@ const CheckoutForm = () => {
                 <div className="flex flex-col gap-5">
                   <div className="flex flex-col gap-2">
                     <label>Email Address</label>
-                    <Input type="email" />
+                    <Input
+                      type="email"
+                      required
+                      placeholder="Type your email..."
+                    />
                   </div>
                   <div className="flex flex-col gap-2">
                     <label>Name</label>
-                    <Input type="text" />
+                    <Input
+                      type="text"
+                      required
+                      placeholder="Type your name..."
+                    />
                   </div>
                   <div className="flex flex-col gap-2">
                     <label>Phone Number</label>
-                    <Input type="number" />
+                    <Input required placeholder="Type your phone..." />
                   </div>
                 </div>
                 <button
@@ -161,11 +190,19 @@ const CheckoutForm = () => {
                   <div className="flex flex-col gap-5">
                     <div className="flex flex-col gap-2">
                       <label>Email Address</label>
-                      <Input type="email" />
+                      <Input
+                        type="email"
+                        required
+                        placeholder="Type your email..."
+                      />
                     </div>
                     <div className="flex flex-col gap-2">
                       <label>Password</label>
-                      <Input type="password" />
+                      <Input
+                        type="password"
+                        required
+                        placeholder="Type your password"
+                      />
                     </div>
                   </div>
                   <button
@@ -200,22 +237,35 @@ const CheckoutForm = () => {
                 <div className="flex flex-col gap-5">
                   <div className="flex flex-col gap-2">
                     <label>Card number</label>
-                    <Input type="number" />
+                    <Input required placeholder="Type your card number..." />
                   </div>
                   <div className="flex flex-col gap-2">
                     <label>Name on card</label>
-                    <Input type="text" />
+                    <Input
+                      type="text"
+                      required
+                      placeholder="Type your name on card..."
+                    />
                   </div>
                   <div className="flex gap-5">
                     <div className="flex flex-col gap-2 flex-1">
                       <label>Expire date</label>
-                      <Input />
+                      <Input
+                        required
+                        placeholder="Type your card's expire date..."
+                      />
                     </div>
                     <div className="flex flex-col gap-2 flex-1">
                       <label>CVV</label>
-                      <Input />
+                      <Input required placeholder="Type your cvv..." />
                     </div>
                   </div>
+                  <button
+                    type="submit"
+                    className="bg-sky-500 p-2 md:p-5 cursor-pointer text-lg md:text-2xl hover:brightness-95 active:brightness-100"
+                  >
+                    BUY NOW
+                  </button>
                 </div>
               </form>
             ) : (
@@ -256,7 +306,11 @@ const CheckoutForm = () => {
         </div>
         <div className="flex flex-col gap-2 pt-5">
           <label>Discount Code</label>
-          <Input />
+          <Input
+            value={discountCode}
+            onChange={handleDiscountChange}
+            placeholder="Enter discount code..."
+          />
         </div>
         <div className="pt-10 pb-5">
           <div className="flex justify-between">
@@ -265,13 +319,31 @@ const CheckoutForm = () => {
             <span className="text-lg md:text-2xl font-bold">{totalItems}</span>
           </div>
           <div className="border-b border-white pt-5"></div>
+
+          <div className="flex justify-between pt-5">
+            <h1 className="text-xl md:text-2xl font-bold">Sub Total:</h1>
+
+            <span className="text-2xl md:text-3xl font-bold">
+              ฿{totalPrice.toLocaleString()}
+            </span>
+          </div>
+          <div className="flex justify-between items-center text-xl md:text-2xl font-bold mt-5">
+            Discounted:
+            {appliedDiscountCode > 0 ? (
+              <span className="text-gray-200">
+                -฿{discountedPrice.toLocaleString()}
+              </span>
+            ) : (
+              <div className="text-lg text-gray-200">none</div>
+            )}
+          </div>
           <div className="flex justify-between pt-5">
             <h1 className="text-2xl md:text-3xl font-extrabold">
               Total Price:
             </h1>
 
             <span className="text-2xl md:text-3xl font-extrabold">
-              ฿{totalPrice.toLocaleString()}
+              ฿{discountedPriceTotal.toLocaleString()}
             </span>
           </div>
         </div>

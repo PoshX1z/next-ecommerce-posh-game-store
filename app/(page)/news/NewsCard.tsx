@@ -38,7 +38,7 @@ const NewsCard = ({
         </Link>
       ) : small ? (
         <Link
-          href="/"
+          href={`/news/${news.slug}`}
           className="relative block group transition-transform hover:scale-105"
         >
           <Image

@@ -43,14 +43,18 @@ const ProductCard = ({ product }: { product: IProductInput }) => {
   };
   return (
     <li className="list-none w-[118px] h-80 sm:w-48 sm:h-64 md:w-52 md:h-80 lg:w-60 lg:h-[480px] rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 bg-gradient-to-br from-sky-950 to-sky-900 border border-sky-700 pb-1">
-      <div className="relative w-full h-40 lg:h-80">
-        <Link href={product.slug} className="group block w-full h-full">
+      <div className="relative w-full h-40 lg:h-80 hover:scale-105 transition ease-in-out duration-200">
+        <Link
+          href={product.slug}
+          className="relative group block w-full h-full"
+        >
           <Image
             src={product.image}
             alt={product.name}
             fill
             priority
-            className="object-cover group-hover:scale-105 transition-transform duration-300"
+            sizes="(min-width: 1024px) 240px, (min-width: 768px) 208px, (min-width: 640px) 192px, 118px" /* lg:w-60 -> 240px, md:w-52 -> 208px, sm:w-48 -> 102px, default: -> 118px  */
+            className="object-cover transition-transform duration-300"
           />
         </Link>
 

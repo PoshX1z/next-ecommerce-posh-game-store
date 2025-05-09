@@ -8,8 +8,8 @@ const ProductCardOrder = ({ order }: { order: any }) => {
     <li className="list-none bg-white rounded-xl overflow-hidden shadow-lg">
       <div className="flex flex-col md:flex-row">
         {/* Game Image */}
-        <div className="px-5 py-5 bg-gray-100 flex justify-center items-center">
-          <div className="relative w-40 h-60 md:w-56 md:h-80 rounded-xl overflow-hidden shadow-md">
+        <div className="p-3 md:p-5 bg-gray-100 flex justify-center items-center">
+          <div className="relative w-72 h-60 sm:w-96 md:w-56 md:h-80 rounded-xl overflow-hidden shadow-md">
             <Image
               src={order.image}
               alt={order.name}
