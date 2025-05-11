@@ -4,10 +4,13 @@ import Link from "next/link";
 import { Heart, ShoppingCartIcon } from "lucide-react";
 import UserButton from "./UserButton";
 import CartSidebar from "../CartSidebar";
+import { useCartStore } from "@/hooks/useCartStore";
 
 const Menu = () => {
   const [isCartOpened, setIsCartOpened] = useState(false);
 
+  const cart = useCartStore((state) => state.cart);
+  const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
   const handleClick = () => {
     return setIsCartOpened(!isCartOpened);
   };
@@ -31,9 +34,16 @@ const Menu = () => {
 
       <div
         onClick={handleClick}
-        className="cursor-pointer hover:text-sky-500 active:scale-95 transition duration-150 ease-in-out"
+        className="relative cursor-pointer hover:text-sky-500 active:scale-95 transition duration-150 ease-in-out py-2"
       >
         <ShoppingCartIcon className="w-5 h-5 md:w-7 md:h-7" />
+        {totalItems > 0 ? (
+          <div className="absolute top-0 right-0 bg-sky-500 p-0.5 rounded-full font-bold text-xs ">
+            {totalItems}
+          </div>
+        ) : (
+          <div></div>
+        )}
       </div>
 
       {isCartOpened && (

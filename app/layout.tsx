@@ -20,6 +20,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: `${APP_NAME}`,
+  icons: "/favicon.ico",
 
   description: APP_DESCRIPTION,
 };
