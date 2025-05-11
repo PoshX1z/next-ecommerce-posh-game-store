@@ -34,9 +34,9 @@ const Menu = () => {
 
       <div
         onClick={handleClick}
-        className="relative cursor-pointer hover:text-sky-500 active:scale-95 transition duration-150 ease-in-out py-2"
+        className="relative cursor-pointer active:scale-95 transition duration-150 ease-in-out py-2"
       >
-        <ShoppingCartIcon className="w-5 h-5 md:w-7 md:h-7" />
+        <ShoppingCartIcon className="w-5 h-5 md:w-7 md:h-7 hover:text-sky-500 " />
         {totalItems > 0 ? (
           <div className="absolute top-0 right-0 bg-sky-500 p-0.5 rounded-full font-bold text-xs ">
             {totalItems}
