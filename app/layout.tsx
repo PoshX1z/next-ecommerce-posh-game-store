@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { APP_DESCRIPTION, APP_NAME } from "@/lib/constants";
-import Footer from "@/components/shared/Footer";
-import HeaderTop from "@/components/shared/header/HeaderTop";
+
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/auth";
 import SessionWrapper from "@/components/shared/SessionWrapper";
@@ -37,15 +36,10 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <SessionWrapper session={session}>
-          <div className="hidden md:block">
-            <HeaderTop />
-          </div>
-          <div className="max-w-7xl mx-auto">
+          <div className="hidden md:block"></div>
+          <div>
             {children}
             <Toaster position="bottom-right" richColors />
-          </div>
-          <div>
-            <Footer />
           </div>
         </SessionWrapper>
       </body>

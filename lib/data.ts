@@ -27,7 +27,7 @@ const products: IProductInput[] = [
     slug: toSlug("A Plague Tale Innocent (Playstation)"),
     image: "/images/games/A Plague Tale Innocent.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Standard",
     description:
       "A Plague Tale: Innocence is an action-adventure stealth game developed by Asobo Studio and published by Focus Home Interactive.",
@@ -106,7 +106,7 @@ const products: IProductInput[] = [
     slug: toSlug("Assassin's Creed Odyssey (Playstation)"),
     image: "/images/games/Assassin's Creed Odyssey.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Ultimate",
     description:
       "Assassin's Creed Odyssey is an action role-playing video game developed by Ubisoft Quebec and published by Ubisoft.",
@@ -144,7 +144,7 @@ const products: IProductInput[] = [
     slug: toSlug("Assassin's Creed Valhalla (Playstation)"),
     image: "/images/games/Assassin's Creed Valhalla.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Deluxe",
     description:
       "Assassin's Creed Valhalla is an action role-playing video game developed by Ubisoft Montreal and published by Ubisoft. It lets you become Eivor, a Viking raider in England’s Dark Ages.",
@@ -257,7 +257,7 @@ const products: IProductInput[] = [
     slug: toSlug("Black Myth Wukong (Playstation)"),
     image: "/images/games/Black Myth Wukong.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Standard",
     description:
       "Black Myth: Wukong is an action RPG developed by Game Science, inspired by the Chinese novel Journey to the West. It features mythological creatures and fast-paced Souls-like combat.",
@@ -297,7 +297,7 @@ const products: IProductInput[] = [
     slug: toSlug("Call Of Duty Black Ops 6 (Playstation)"),
     image: "/images/games/Call Of Duty Black Ops 6.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Standard",
     description:
       "Call of Duty: Black Ops 6 is a first-person shooter developed by Treyarch and Raven Software, continuing the popular Black Ops series with intense multiplayer and campaign experiences.",
@@ -374,7 +374,7 @@ const products: IProductInput[] = [
     slug: toSlug("Callisto Protocol (Playstation)"),
     image: "/images/games/Callisto Protocol.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Day One",
     description:
       "The Callisto Protocol is a survival horror game developed by Striking Distance Studios and published by Krafton. It delivers a story-driven, third-person experience set on Jupiter’s dead moon.",
@@ -413,7 +413,7 @@ const products: IProductInput[] = [
     slug: toSlug("Control (Playstation)"),
     image: "/images/games/Control.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Ultimate",
     description:
       "Control is a third-person action-adventure game developed by Remedy Entertainment. Explore a mysterious government facility and harness supernatural abilities to uncover hidden truths.",
@@ -453,7 +453,7 @@ const products: IProductInput[] = [
     slug: toSlug("Cyberpunk 2077 (Playstation)"),
     image: "/images/games/Cyberpunk 2077.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Phantom Liberty Bundle",
     description:
       "Cyberpunk 2077 is an open-world RPG developed by CD Projekt Red, set in a dystopian future where players control V, a mercenary navigating the streets of Night City.",
@@ -508,7 +508,7 @@ const products: IProductInput[] = [
     slug: toSlug("Death Stranding (Playstation)"),
     image: "/images/games/Death Stranding.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Director's Cut",
     description:
       "An open-world action game set in a fractured America. Developed by Kojima Productions and directed by Hideo Kojima.",
@@ -565,7 +565,7 @@ const products: IProductInput[] = [
     slug: toSlug("Devil May Cry 5 (Playstation)"),
     image: "/images/games/Devil May Cry 5.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Special",
     description:
       "Join Dante and Nero in a high-octane demon-slaying action game from Capcom with stylish combat and epic bosses.",
@@ -639,7 +639,7 @@ const products: IProductInput[] = [
     slug: toSlug("Doom Eternal (Playstation)"),
     image: "/images/games/Doom Eternal.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Deluxe",
     description:
       "A high-speed, demon-slaying FPlaystation from id Software. Continue the fight as the Doom Slayer in a battle against Hell's armies.",
@@ -677,7 +677,7 @@ const products: IProductInput[] = [
     slug: toSlug("Dragon Age Inquisition (Playstation)"),
     image: "/images/games/Dragon Age Inquisition.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Game of the Year",
     description:
       "A fantasy RPG where you lead the Inquisition to restore order across Thedas. Shape your story with impactful choices.",
@@ -715,7 +715,7 @@ const products: IProductInput[] = [
     slug: toSlug("Dragon Ball Z Kakarot (Playstation)"),
     image: "/images/games/Dragon Ball Z Kakarot.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Legendary",
     description:
       "Relive the story of Goku and other Z Fighters in this action-RPG that blends epic battles with life beyond fighting.",
@@ -770,7 +770,7 @@ const products: IProductInput[] = [
     slug: toSlug("Elden Ring (Playstation)"),
     image: "/images/games/Elden Ring.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Standard",
     description:
       "Elden Ring is a vast action-RPG developed by FromSoftware, offering deep lore, open-world exploration, and brutal Souls-style combat.",
@@ -869,7 +869,7 @@ const products: IProductInput[] = [
     slug: toSlug("Final Fantasy Origin Stranger Of Paradise (Playstation)"),
     image: "/images/games/Final Fantasy Origin Stranger Of Paradise.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Standard",
     description:
       "Stranger of Paradise: Final Fantasy Origin is a darker, action-focused take on the FF universe with intense, fast-paced combat.",
@@ -890,7 +890,7 @@ const products: IProductInput[] = [
     slug: toSlug("Final Fantasy VII Rebirth (Playstation)"),
     image: "/images/games/Final Fantasy VII Rebirth.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Deluxe",
     description:
       "Final Fantasy VII Rebirth continues Cloud’s journey in this reimagined epic with vast environments and intense narrative moments.",
@@ -969,7 +969,7 @@ const products: IProductInput[] = [
     slug: toSlug("Final Fantasy XV (Playstation)"),
     image: "/images/games/Final Fantasy XV.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Royal",
     description:
       "Final Fantasy XV tells the story of Prince Noctis and his comrades in a modern fantasy world filled with epic action and bonds.",
@@ -989,7 +989,7 @@ const products: IProductInput[] = [
     slug: toSlug("Final Fantasy XVI (Playstation)"),
     image: "/images/games/Final Fantasy XVI.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Standard",
     description:
       "Final Fantasy XVI introduces a darker tale of revenge and fate in a medieval fantasy world with powerful Eikons and cinematic combat.",
@@ -1046,7 +1046,7 @@ const products: IProductInput[] = [
     slug: toSlug("Genshin Impact (Playstation)"),
     image: "/images/games/Genshin Impact.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Starter",
     description:
       "Genshin Impact is an open-world action RPG developed and published by miHoYo. It features an anime-style fantasy world with elemental combat and character switching.",
@@ -1067,7 +1067,7 @@ const products: IProductInput[] = [
     slug: toSlug("Ghost Of Tsushima (Playstation)"),
     image: "/images/games/Ghost Of Tsushima.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Director's Cut",
     description:
       "Ghost of Tsushima is an action-adventure game developed by Sucker Punch Productions and published by Sony Interactive Entertainment. It follows a samurai during the Mongol invasion of Japan.",
@@ -1107,7 +1107,7 @@ const products: IProductInput[] = [
     slug: toSlug("God Of War Ragnarok (Playstation)"),
     image: "/images/games/God Of War Ragnarok.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Standard",
     description:
       "God of War Ragnarök is an action-adventure game developed by Santa Monica Studio and published by Sony Interactive Entertainment. It continues Kratos and Atreus’s journey through Norse mythology.",
@@ -1188,7 +1188,7 @@ const products: IProductInput[] = [
     slug: toSlug("Grandblue Fantasy Relink (Playstation)"),
     image: "/images/games/Grandblue Fantasy Relink.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Deluxe",
     description:
       "Granblue Fantasy: Relink is an action RPG developed by Cygames. It brings the popular mobile franchise into a full 3D console experience with real-time combat.",
@@ -1312,7 +1312,7 @@ const products: IProductInput[] = [
     slug: toSlug("Horizon Forbidden West (Playstation)"),
     image: "/images/games/Horizon Forbidden West.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Standard",
     description:
       "Horizon Forbidden West is an action role-playing game developed by Guerrilla Games and published by Sony Interactive Entertainment. It continues the story of Aloy as she ventures into the mysterious frontier known as the Forbidden West.",
@@ -1561,7 +1561,7 @@ const products: IProductInput[] = [
     slug: toSlug("Monster Hunter Wilds (Playstation)"),
     image: "/images/games/Monster Hunter Wilds.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Standard",
     description:
       "Monster Hunter Wilds is an upcoming action role-playing game developed and published by Capcom. It continues the series' tradition of epic monster battles and cooperative gameplay.",
@@ -1599,7 +1599,7 @@ const products: IProductInput[] = [
     slug: toSlug("Monster Hunter World Iceborne (Playstation)"),
     image: "/images/games/Monster Hunter World Iceborne.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Master",
     description:
       "Monster Hunter World: Iceborne is a massive expansion for Monster Hunter: World, adding new monsters, areas, and mechanics to deepen the hunting experience.",
@@ -1657,7 +1657,7 @@ const products: IProductInput[] = [
     slug: toSlug("Nier R Automata (Playstation)"),
     image: "/images/games/Nier R Automata.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Game of the YoRHa",
     description:
       "NieR: Automata is an action RPG developed by PlatinumGames and published by Square Enix. It features a profound story, stunning combat, and philosophical undertones.",
@@ -1677,7 +1677,7 @@ const products: IProductInput[] = [
     slug: toSlug("Rachet & Clank Rift Apart (Playstation)"),
     image: "/images/games/Rachet & Clank Rift Apart.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Standard",
     description:
       "Ratchet & Clank: Rift Apart is a visually stunning action-adventure platformer developed by Insomniac Games and published by Sony Interactive Entertainment.",
@@ -1715,7 +1715,7 @@ const products: IProductInput[] = [
     slug: toSlug("Red Dead Redemtion 2 (Playstation)"),
     image: "/images/games/Red Dead Redemtion 2.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Ultimate",
     description:
       "Red Dead Redemption 2 is an epic tale of life in America at the dawn of the modern age. Developed by Rockstar Games, it's a masterpiece of storytelling and open-world design.",
@@ -1773,7 +1773,7 @@ const products: IProductInput[] = [
     slug: toSlug("Resident Evil 4 (Playstation)"),
     image: "/images/games/Resident Evil 4.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Deluxe",
     description:
       "Resident Evil 4 is a survival horror remake of the 2005 classic, revitalized with modern graphics, controls, and terrifying atmosphere by Capcom.",
@@ -1813,7 +1813,7 @@ const products: IProductInput[] = [
     slug: toSlug("Scarlet Nexus (Playstation)"),
     image: "/images/games/Scarlet Nexus.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Deluxe",
     description:
       "Scarlet Nexus is a brain-punk action RPG where players wield powerful psychic abilities in a futuristic world threatened by mysterious mutants.",
@@ -1870,7 +1870,7 @@ const products: IProductInput[] = [
     slug: toSlug("Sekiro Shadow Die Twice (Playstation)"),
     image: "/images/games/Sekiro Shadow Die Twice.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Game of the Year",
     description:
       "Sekiro: Shadows Die Twice is an action-adventure game that places you in the shoes of a shinobi on a mission to rescue his kidnapped lord in Sengoku-era Japan.",
@@ -1910,7 +1910,7 @@ const products: IProductInput[] = [
     slug: toSlug("Spider Man Mile Morales (Playstation)"),
     image: "/images/games/Spider Man Mile Morales.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Launch",
     description:
       "Marvel’s Spider-Man: Miles Morales is a superhero game following the journey of young Miles as he masters new powers to become his own Spider-Man.",
@@ -2010,7 +2010,7 @@ const products: IProductInput[] = [
     slug: toSlug("Tales Of Arise (Playstation)"),
     image: "/images/games/Tales Of Arise.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Standard",
     description:
       "Tales of Arise is a JRPG that follows two heroes from different worlds united to fight oppression in a beautiful, story-rich adventure with action-packed combat.",
@@ -2030,7 +2030,7 @@ const products: IProductInput[] = [
     slug: toSlug("The Last Of Us Part II Remastered (Playstation)"),
     image: "/images/games/The Last Of Us Part II Remastered.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Remastered",
     description:
       "The Last of Us Part II Remastered offers an upgraded version of the acclaimed sequel, exploring Ellie’s harrowing journey with enhanced visuals and gameplay.",
@@ -2049,7 +2049,7 @@ const products: IProductInput[] = [
     slug: toSlug("The Last Of Us Remake (Playstation)"),
     image: "/images/games/The Last Of Us Remake.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Remake",
     description:
       "The Last of Us Remake rebuilds the beloved original with modernized gameplay, improved controls, and enhanced visuals while retaining the emotional narrative.",
@@ -2107,7 +2107,7 @@ const products: IProductInput[] = [
     slug: toSlug("The Witcher 3 (Playstation)"),
     image: "/images/games/The Witcher 3.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Game of the Year",
     description:
       "The Witcher 3: Wild Hunt is a massive open-world RPG where players become Geralt of Rivia, a monster hunter caught in a war-torn world.",
@@ -2148,7 +2148,7 @@ const products: IProductInput[] = [
     slug: toSlug("Uncharted 4 (Playstation)"),
     image: "/images/games/Uncharted 4.jpg",
     platform: "Playstation",
-    platformImageIcon: "/images/icons/ps-icon.png",
+    platformImageIcon: "/images/icons/playstation-icon.png",
     edition: "Standard",
     description:
       "Uncharted 4: A Thief’s End follows Nathan Drake on one last globe-trotting treasure hunt, filled with action-packed set pieces and heartfelt storytelling.",

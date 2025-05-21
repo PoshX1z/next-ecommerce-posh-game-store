@@ -92,7 +92,7 @@ const ProductDetailsItem = ({ product }: { product: IProductInput }) => {
         <div className="grid grid-cols-3 text-sm md:text-base text-gray-300 bg-[#1a1332] rounded-lg px-4 py-3">
           <div>
             <p className="uppercase text-xs text-gray-400">Platform</p>
-            <p>{product?.platform}</p>
+            <p>{product?.platform.toUpperCase()}</p>
           </div>
           <div>
             <p className="uppercase text-xs text-gray-400">Edition</p>
